@@ -1,0 +1,204 @@
+{
+    "header": {
+        "about": "Về chúng tôi",
+        "services": "Dịch vụ",
+        "blog": "Blog",
+        "contact": "Liên hệ",
+        "consultation": "Tư vấn",
+        "switchLanguage": "Switch to English"
+    },
+    "home": {
+        "hero": {
+            "title": "Giá trị tăng trưởng cho doanh nghiệp của bạn",
+            "subtitle": "Chúng tôi giúp doanh nghiệp đạt được tăng trưởng bền vững thông qua đổi mới số",
+            "cta": "Bắt đầu ngay"
+        },
+        "about": {
+            "title": "Nexdor Solutions",
+            "description": "Nexdor Solutions tự hào với đội ngũ chuyên viên giàu kinh nghiệm và sự am hiểu sâu sắc về thị trường, chúng tôi giúp doanh nghiệp tạo ra những chiến lược thương hiệu đột phá, từ thiết kế nhận diện đến định vị và truyền thông, giúp doanh nghiệp ghi dấu ấn mạnh mẽ trên thị trường. Bên cạnh đó, Nexdor Solutions còn hỗ trợ tối ưu gian hàng đa nền tảng giúp doanh nghiệp tiếp cận khách hàng mục tiêu, tăng hiển thị và gia tăng doanh thu bền vững. Chúng tôi không chỉ là đối tác mà còn là người đồng hành tin cậy, cam kết cùng bạn chinh phục mọi mục tiêu và tạo nên những giá trị bền vững.",
+            "cta": "Xem chi tiết",
+            "imageAlt": "Về Nexdor Solutions"
+        },
+        "clients": {
+            "title": "Khách hàng của chúng tôi"
+        },
+        "partners": {
+            "title": "Đối tác của chúng tôi"
+        },
+        "testimonials": {
+            "title": "Nhận xét từ khách hàng",
+            "items": [
+                {
+                    "content": "Sạp Lê La là một thương hiệu mới hoàn toàn, nên giai đoạn đầu chúng tôi gặp không ít thách thức trong việc xây dựng hình ảnh và vận hành gian hàng trên các sàn TMĐT. Nexdor giúp chúng tôi tối ưu từ A-Z: thiết lập gian hàng, tạo nội dung, lên chiến lược giá và khuyến mãi hợp lý và cả chạy quảng cáo hiệu quả.",
+                    "company": "Sạp Lê La"
+                },
+                {
+                    "content": "Trước đây, Đậu Má Mix có gian hàng trên các nền tảng giao đồ ăn nhưng chưa tối ưu, hiệu suất chưa cao. Hợp tác với Nexdor Solutions đã giúp các cửa hàng cải thiện từ hình ảnh, nội dung đến chiến lược giá, giúp gian hàng vận hành trơn tru hơn.",
+                    "company": "Đậu Má Mix"
+                },
+                {
+                    "content": "Từ một quán cơm tấm nhỏ chỉ bán mang đi, Cơm tấm Ba Lộc nay đã có gần 10 hubs và sắp mở quán ăn tại chỗ. Nhờ NexDor, thương hiệu được xây dựng bài bản từ logo, nhân vật chú Ba Lộc đến fanpage chỉn chu, giúp Ba Lộc tiếp cận khách hàng tốt hơn.",
+                    "company": "Cơm tấm Ba Lộc"
+                },
+                {
+                    "content": "Gà Nướng Ò Ó O là thương hiệu có hệ thống cửa hàng rộng khắp, nhưng việc tối ưu gian hàng online vẫn còn nhiều hạn chế. Nhờ NexDor, chúng tôi đã cải thiện đáng kể từ hình ảnh, nội dung đến chiến lược giá và khuyến mãi trên các nền tảng giao đồ ăn.",
+                    "company": "Gà Nướng Ò Ó O"
+                },
+                {
+                    "content": "Khi Lucky Pao bắt đầu kinh doanh online, chúng tôi gặp nhiều khó khăn trong việc thu hút khách hàng và vận hành gian hàng hiệu quả. NexDor đã giúp tối ưu mọi mặt – từ xây dựng thương hiệu, cải thiện hình ảnh đến chạy chiến dịch marketing bài bản.",
+                    "company": "Lucky Pao"
+                }
+            ]
+        },
+        "services": {
+            "title": "Giải pháp của chúng tôi",
+            "viewMore": "Xem thêm"
+        },
+        "aboutUs": "Về chúng tôi",
+        "nexdor": {
+            "title": "Nexdor Solutions",
+            "description": "Nexdor Solutions tự hào với đội ngũ chuyên viên giàu kinh nghiệm và sự am hiểu sâu sắc về thị trường, chúng tôi giúp doanh nghiệp tạo ra những chiến lược thương hiệu đột phá, từ thiết kế nhận diện đến định vị và truyền thông, giúp doanh nghiệp ghi dấu ấn mạnh mẽ trên thị trường. Bên cạnh đó, Nexdor Solutions còn hỗ trợ tối ưu gian hàng đa nền tảng giúp doanh nghiệp tiếp cận khách hàng mục tiêu, tăng hiển thị và gia tăng doanh thu bền vững. Chúng tôi không chỉ là đối tác mà còn là người đồng hành tin cậy, cam kết cùng bạn chinh phục mọi mục tiêu và tạo nên những giá trị bền vững.",
+            "cta": "Xem chi tiết",
+            "imageAlt": "Về Nexdor Solutions"
+        },
+        "customerReviews": "Nhận xét từ khách hàng",
+        "ourClients": "Khách hàng của chúng tôi",
+        "contactForm": {
+            "title": "Để lại thông tin liên hệ",
+            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của TAS sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
+            "namePlaceholder": "Họ và tên",
+            "phonePlaceholder": "Số điện thoại",
+            "emailPlaceholder": "Địa chỉ email",
+            "businessAreaPlaceholder": "Lĩnh vực hoạt động",
+            "messagePlaceholder": "Nội dung",
+            "submitButton": "Gửi thông tin"
+        }
+    },
+    "blog": {
+        "title": "BLOG",
+        "subtitle": "Kiến thức của Vibula về Social và Digital Marketing",
+        "categories": {
+            "all": "Tất cả",
+            "socialCommerce": "Social Commerce",
+            "digitalMarketing": "Digital Marketing",
+            "eCommerce": "E-Commerce",
+            "tiktok": "TikTok"
+        },
+        "latestPosts": "Bài viết mới nhất",
+        "popularPosts": "Bài viết phổ biến",
+        "sharePost": "Chia sẻ bài viết",
+        "relatedPosts": "Bài viết liên quan",
+        "readMore": "Xem thêm"
+    },
+    "services": {
+        "title": "Dịch vụ của chúng tôi",
+        "subtitle": "Chúng tôi cung cấp các giải pháp toàn diện để giúp doanh nghiệp của bạn phát triển trong thời đại số",
+        "solutionTitle": "Giải pháp đa kênh Nexdor Solutions",
+        "solutionImageAlt": "Minh họa giải pháp",
+        "leadSolution": {
+            "part1": "Dẫn đầu giải pháp ",
+            "part2": "chuyển đổi số<br />",
+            "part3": "về quản lý & chăm sóc khách hàng",
+            "description": "Chúng tôi tạo ra đòn bẩy cho doanh nghiệp phát triển<br /> trở thành doanh nghiệp số, cho phép tự động hoá quy trình<br /> kinh doanh đa kênh để bứt phá doanh số."
+        },
+        "categories": {
+            "branding": {
+                "title": "Dịch vụ thương hiệu",
+                "items": {
+                    "consulting": "Tư vấn thương hiệu",
+                    "development": "Xây dựng và phát triển thương hiệu",
+                    "design": "Thiết kế thương hiệu",
+                    "performance": "Digital Performance"
+                }
+            },
+            "commerce": {
+                "title": "Thương mại đa kênh",
+                "items": {
+                    "ecommerce": "Dịch vụ E-commerce",
+                    "qcommerce": "Dịch vụ Q-Commerce",
+                    "social": "Social Commerce"
+                }
+            }
+        },
+        "cta": {
+            "needHelp": "Bạn cần tư vấn thêm?",
+            "contactUs": "Liên hệ ngay"
+        },
+        "breadcrumb": {
+            "services": "Dịch vụ"
+        },
+        "features": {
+            "title": "Tính năng chính"
+        },
+        "benefits": {
+            "title": "Lợi ích"
+        }
+    },
+    "contact": {
+        "hero": {
+            "label": "LIÊN HỆ NEXDOR SOLUTION",
+            "title": "Tìm giải pháp hoàn hảo cho doanh nghiệp của bạn",
+            "text": "Chúng tôi rất biết ơn và trân trọng sự hợp tác của quý khách hàng trong thời gian qua.",
+            "imageAlt": "Minh họa hợp tác kinh doanh"
+        },
+        "info": {
+            "title": "Thông tin liên hệ",
+            "companyName": "CÔNG TY TNHH NEXDOR VIỆT NAM",
+            "headquarters": "Trụ sở chính:",
+            "address": "24 Huỳnh Khương Ninh, phường Đa Kao, quận 1, TP. Hồ Chí Minh",
+            "phone": "Điện thoại:",
+            "phoneNumber": "(+84) 028 7777 6666",
+            "email": "Địa chỉ email:",
+            "emailAddress": "partner@nexdor.tech"
+        },
+        "form": {
+            "title": "Để lại thông tin liên hệ",
+            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của TAS sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
+            "namePlaceholder": "Họ và tên",
+            "phonePlaceholder": "Số điện thoại",
+            "emailPlaceholder": "Địa chỉ email",
+            "businessAreaPlaceholder": "Lĩnh vực hoạt động",
+            "messagePlaceholder": "Nội dung",
+            "submitButton": "Gửi thông tin",
+            "validationMessage": "Vui lòng điền đầy đủ các trường bắt buộc.",
+            "successMessage": "Thông tin của bạn đã được gửi thành công!"
+        }
+    },
+    "aboutUs": {
+        "title": "Câu chuyện của chúng tôi",
+        "companyName": "Nexdor Solutions",
+        "description": "Nexdor Solutions tự hào với đội ngũ chuyên viên giàu kinh nghiệm và sự am hiểu sâu sắc về thị trường, chúng tôi mang đến những chiến lược sáng tạo, cá nhân hóa, giúp khách hàng tối ưu hóa hiệu quả kinh doanh và xây dựng thương hiệu mạnh. Tại Nexdor Solutions, chúng tôi không chỉ là đối tác mà còn là người đồng hành tin cậy, cam kết cùng bạn chinh phục mọi mục tiêu và tạo nên những giá trị bền vững. Hãy để chúng tôi giúp bạn kể câu chuyện thương hiệu của mình một cách ấn tượng và thành công!",
+        "teamImageAlt": "Đội ngũ Vibula",
+        "coreValues": {
+            "title": "Giá trị cốt lõi",
+            "description": "Tại Nexdor Solutions, chúng tôi xây dựng nền tảng hoạt động dựa trên ba giá trị cốt lõi: Sáng tạo, Chuyên nghiệp, và Cam kết kết quả. Những giá trị này không chỉ định hướng mọi hoạt động của chúng tôi mà còn là lời hứa với khách hàng về sự tin cậy và chất lượng vượt trội."
+        },
+        "vision": {
+            "title": "Tầm nhìn của chúng tôi",
+            "description": "Trong 10 năm tới, Nexdor Solutions sẽ trở thành đối tác chiến lược hàng đầu trong lĩnh vực thương mại đa kênh và xây dựng thương hiệu đồng hành cùng hơn 1000 thương hiệu, không chỉ tại thị trường trong nước mà còn vươn tầm ảnh hưởng ra khu vực và quốc tế. Chúng tôi hướng đến việc xây dựng một hệ sinh thái dịch vụ toàn diện, nơi các thương hiệu có thể tìm thấy giải pháp tối ưu để phát triển bền vững và cạnh tranh hiệu quả trong thời đại số hóa."
+        },
+        "mission": {
+            "title": "Sứ mệnh",
+            "description": "Đồng hành cùng các thương hiệu trên hành trình chinh phục thị trường và xây dựng giá trị bền vững, chúng tôi cam kết mang đến những giải pháp toàn diện và sáng tạo trong lĩnh vực thương mại đa kênh và xây dựng thương hiệu, giúp khách hàng không chỉ đạt được mục tiêu kinh doanh mà còn tạo dựng được vị thế vững chắc trong lòng người tiêu dùng. Với sứ mệnh này, Nexdor Solutions không ngừng nỗ lực để trở thành một phần quan trọng trong hành trình phát triển của các thương hiệu, góp phần tạo nên những câu chuyện thành công đầy cảm hứng."
+        }
+    },
+    "footer": {
+        "companyName": "CÔNG TY TNHH NEXDOR VIỆT NAM",
+        "services": {
+            "title": "Dịch vụ",
+            "items": {
+                "digitalMarketing": "Digital Marketing",
+                "webDevelopment": "Phát triển web",
+                "branding": "Xây dựng thương hiệu",
+                "consulting": "Tư vấn"
+            }
+        },
+        "contact": {
+            "title": "Liên hệ",
+            "email": "Địa chỉ email",
+            "phone": "Điện thoại",
+            "address": "Địa chỉ"
+        },
+        "allRightsReserved": "Tất cả quyền được bảo lưu."
+    }
+}

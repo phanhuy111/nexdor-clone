@@ -1,0 +1,204 @@
+{
+    "header": {
+        "about": "About Us",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact",
+        "consultation": "Consultation",
+        "switchLanguage": "Switch to Vietnamese"
+    },
+    "home": {
+        "hero": {
+            "title": "Growth-driven value for your business",
+            "subtitle": "We help businesses achieve sustainable growth through digital innovation",
+            "cta": "Get Started"
+        },
+        "about": {
+            "title": "Nexdor Solutions",
+            "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding. We help businesses create breakthrough brand strategies, from identity design to positioning and communication, helping businesses make a strong impression in the market. Additionally, Nexdor Solutions optimizes multi-platform stores to help businesses reach target customers, increase visibility, and grow sustainable revenue. We are not just partners but trusted companions, committed to helping you achieve all goals and create lasting value.",
+            "cta": "Learn More",
+            "imageAlt": "About Nexdor Solutions"
+        },
+        "clients": {
+            "title": "Our Clients"
+        },
+        "partners": {
+            "title": "Our Partners"
+        },
+        "testimonials": {
+            "title": "Customer Reviews",
+            "items": [
+                {
+                    "content": "As a completely new brand, Sap Le La faced many challenges in building our image and operating stores on e-commerce platforms. Nexdor helped us optimize everything from A-Z: store setup, content creation, pricing strategy, and effective advertising campaigns.",
+                    "company": "Sap Le La"
+                },
+                {
+                    "content": "Previously, Dau Ma Mix had stores on food delivery platforms but they weren't optimized and efficiency was low. Partnering with Nexdor Solutions helped improve everything from imagery to content and pricing strategy.",
+                    "company": "Dau Ma Mix"
+                },
+                {
+                    "content": "From a small takeaway rice shop, Com Tam Ba Loc now has nearly 10 hubs and is about to open a dine-in restaurant. Thanks to NexDor, the brand was professionally built from logo to content.",
+                    "company": "Com Tam Ba Loc"
+                },
+                {
+                    "content": "Ga Nuong O O O is a brand with a wide system of stores, but online store optimization was still limited. Thanks to NexDor, we have significantly improved from images to content and pricing strategy.",
+                    "company": "Ga Nuong O O O"
+                },
+                {
+                    "content": "When Lucky Pao started online business, we faced many difficulties in attracting customers and operating stores effectively. NexDor helped optimize everything - from branding to marketing campaigns.",
+                    "company": "Lucky Pao"
+                }
+            ]
+        },
+        "services": {
+            "title": "Our Solutions",
+            "viewMore": "View More"
+        },
+        "aboutUs": "About Us",
+        "nexdor": {
+            "title": "Nexdor Solutions",
+            "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding. We help businesses create breakthrough brand strategies, from identity design to positioning and communication, helping businesses make a strong impression in the market. Additionally, Nexdor Solutions optimizes multi-platform stores to help businesses reach target customers, increase visibility, and grow sustainable revenue. We are not just partners but trusted companions, committed to helping you achieve all goals and create lasting value.",
+            "cta": "Learn More",
+            "imageAlt": "About Nexdor Solutions"
+        },
+        "customerReviews": "Customer Reviews",
+        "ourClients": "Our Clients",
+        "contactForm": {
+            "title": "Leave Your Contact Information",
+            "description": "Please fill in your contact information, and a TAS representative will get back to you as soon as possible to answer your questions and provide consultation.",
+            "namePlaceholder": "Full Name",
+            "phonePlaceholder": "Phone Number",
+            "emailPlaceholder": "Email Address",
+            "businessAreaPlaceholder": "Business Area",
+            "messagePlaceholder": "Message",
+            "submitButton": "Submit Information"
+        }
+    },
+    "blog": {
+        "title": "BLOG",
+        "subtitle": "Vibula's Knowledge about Social and Digital Marketing",
+        "categories": {
+            "all": "All",
+            "socialCommerce": "Social Commerce",
+            "digitalMarketing": "Digital Marketing",
+            "eCommerce": "E-Commerce",
+            "tiktok": "TikTok"
+        },
+        "latestPosts": "Latest Posts",
+        "popularPosts": "Popular Posts",
+        "sharePost": "Share this post",
+        "relatedPosts": "Related Posts",
+        "readMore": "Read More"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We provide comprehensive solutions to help your business grow in the digital age",
+        "solutionTitle": "Nexdor Solutions Multi-channel Solutions",
+        "solutionImageAlt": "Solution Illustration",
+        "leadSolution": {
+            "part1": "Leading the way in ",
+            "part2": "digital transformation<br />",
+            "part3": "for management & customer care",
+            "description": "We create leverage for businesses to develop<br /> into digital enterprises, enabling automation of<br /> multi-channel business processes to boost sales."
+        },
+        "categories": {
+            "branding": {
+                "title": "Branding Services",
+                "items": {
+                    "consulting": "Brand Consulting",
+                    "development": "Brand Development",
+                    "design": "Brand Design",
+                    "performance": "Digital Performance"
+                }
+            },
+            "commerce": {
+                "title": "Multi-channel Commerce",
+                "items": {
+                    "ecommerce": "E-commerce Services",
+                    "qcommerce": "Q-Commerce Services",
+                    "social": "Social Commerce"
+                }
+            }
+        },
+        "cta": {
+            "needHelp": "Need more consultation?",
+            "contactUs": "Contact Us Now"
+        },
+        "breadcrumb": {
+            "services": "Services"
+        },
+        "features": {
+            "title": "Key Features"
+        },
+        "benefits": {
+            "title": "Benefits"
+        }
+    },
+    "contact": {
+        "hero": {
+            "label": "CONTACT NEXDOR SOLUTION",
+            "title": "Find the perfect solution for your business",
+            "text": "We are grateful and appreciate the cooperation of our customers over the past time.",
+            "imageAlt": "Business collaboration illustration"
+        },
+        "info": {
+            "title": "Contact Information",
+            "companyName": "NEXDOR VIETNAM CO., LTD",
+            "headquarters": "Headquarters:",
+            "address": "24 Huynh Khuong Ninh, Da Kao Ward, District 1, Ho Chi Minh City",
+            "phone": "Phone:",
+            "phoneNumber": "(+84) 028 7777 6666",
+            "email": "Email Address:",
+            "emailAddress": "partner@nexdor.tech"
+        },
+        "form": {
+            "title": "Leave Your Contact Information",
+            "description": "Please fill in your contact information, and a TAS representative will get back to you as soon as possible to answer your questions and provide consultation.",
+            "namePlaceholder": "Full Name",
+            "phonePlaceholder": "Phone Number",
+            "emailPlaceholder": "Email Address",
+            "businessAreaPlaceholder": "Business Area",
+            "messagePlaceholder": "Message",
+            "submitButton": "Submit Information",
+            "validationMessage": "Please fill in all required fields.",
+            "successMessage": "Your information has been successfully submitted!"
+        }
+    },
+    "aboutUs": {
+        "title": "Our Story",
+        "companyName": "Nexdor Solutions",
+        "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding. We bring creative, personalized strategies to help clients optimize business efficiency and build strong brands. At Nexdor Solutions, we are not just partners but trusted companions, committed to helping you achieve all goals and create lasting value. Let us help you tell your brand story impressively and successfully!",
+        "teamImageAlt": "Vibula Team",
+        "coreValues": {
+            "title": "Core Values",
+            "description": "At Nexdor Solutions, we build our operations on three core values: Creativity, Professionalism, and Commitment to Results. These values not only guide all our activities but also promise our clients reliability and superior quality."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "In the next 10 years, Nexdor Solutions will become a leading strategic partner in the multi-channel commerce and branding field, accompanying over 1000 brands, not only in the domestic market but also expanding influence regionally and internationally. We aim to build a comprehensive service ecosystem where brands can find optimal solutions for sustainable development and effective competition in the digital age."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "Accompanying brands on their journey to conquer the market and build sustainable value, we are committed to providing comprehensive and innovative solutions in the multi-channel commerce and branding field, helping clients not only achieve business goals but also establish a strong position in the hearts of consumers. With this mission, Nexdor Solutions continuously strives to become an important part of the development journey of brands, contributing to creating inspiring success stories."
+        }
+    },
+    "footer": {
+        "companyName": "NEXDOR VIETNAM CO., LTD",
+        "services": {
+            "title": "Services",
+            "items": {
+                "digitalMarketing": "Digital Marketing",
+                "webDevelopment": "Web Development",
+                "branding": "Branding",
+                "consulting": "Consulting"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "Email",
+            "phone": "Phone",
+            "address": "Address"
+        },
+        "allRightsReserved": "All rights reserved."
+    }
+}

@@ -64,7 +64,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content */}
-                        <div className="lg:w-3/4">
+                        <div className="flex-1">
                             <article className="prose max-w-none">
                                 <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                             </article>

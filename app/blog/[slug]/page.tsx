@@ -91,68 +91,6 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                                 </div>
                             </div>
                         </div>
-
-                        {/* Sidebar */}
-                        <div className="lg:w-1/4">
-                            {/* Categories */}
-                            <div className="mb-8">
-                                <h3 className="text-xl font-bold mb-4">Danh mục</h3>
-                                <div className="border rounded-lg p-4">
-                                    <Link
-                                        href="/blog/category/all"
-                                        className="block py-2 px-4 bg-gray-100 rounded-md mb-2 hover:bg-red-100 transition-colors"
-                                    >
-                                        Tất cả
-                                    </Link>
-                                    <Link
-                                        href="/blog/category/social-commerce"
-                                        className="block py-2 px-4 rounded-md mb-2 hover:bg-red-100 transition-colors"
-                                    >
-                                        Social Commerce
-                                    </Link>
-                                    <Link
-                                        href="/blog/category/digital-marketing"
-                                        className="block py-2 px-4 rounded-md mb-2 hover:bg-red-100 transition-colors"
-                                    >
-                                        Digital Marketing
-                                    </Link>
-                                    <Link
-                                        href="/blog/category/tiktok"
-                                        className="block py-2 px-4 rounded-md mb-2 hover:bg-red-100 transition-colors"
-                                    >
-                                        TikTok
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Related Posts */}
-                            <div>
-                                <h3 className="text-xl font-bold mb-4">Bài viết liên quan</h3>
-                                <div className="space-y-4">
-                                    {relatedPosts.map((relatedPost: any) => (
-                                        <div key={relatedPost.id} className="flex gap-3 group">
-                                            <Image
-                                                src={relatedPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/placeholder.svg?height=60&width=80"}
-                                                alt={relatedPost.title.rendered}
-                                                width={80}
-                                                height={60}
-                                                className="w-20 h-16 object-cover rounded"
-                                            />
-                                            <div>
-                                                <Link
-                                                    href={`/blog/${relatedPost.slug}`}
-                                                    className="text-sm font-medium group-hover:text-red-600 transition-colors"
-                                                    dangerouslySetInnerHTML={{ __html: relatedPost.title.rendered }}
-                                                />
-                                                <p className="text-xs text-gray-500 mt-1">
-                                                    {new Date(relatedPost.date).toLocaleDateString()}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

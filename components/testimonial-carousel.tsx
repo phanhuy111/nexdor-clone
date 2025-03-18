@@ -66,22 +66,28 @@ export default function TestimonialCarousel() {
         {testimonials.map((testimonial) => (
           <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/2">
             <div className="p-4 h-full">
-              <div className="flex gap-4 bg-white rounded-lg shadow p-6 h-full">
-                <Image src={testimonial.image} alt={testimonial.company} width={100} height={100} className="w-[100px] h-[100px] object-contain" />
-                <div className="flex flex-col justify-between">
-                  <p className="text-sm mb-4">{testimonial.content}</p>
-                  <p className="text-xs text-gray-500">
-                    {testimonial.company}
-                  </p>
-                </div>
+              <div className="flex flex-col items-center bg-white rounded-lg shadow p-6 h-full">
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.company}
+                  width={100}
+                  height={100}
+                  className="w-[100px] h-[100px] object-contain rounded-full mb-4"
+                />
+                <p className="text-sm text-center mb-4">{testimonial.content}</p>
+                <p className="text-sm text-gray-500 text-center">
+                  {testimonial.company}
+                </p>
               </div>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
       <div className="flex justify-center mt-4">
-        <CarouselPrevious className="static translate-y-0 mr-2" />
-        <CarouselNext className="static translate-y-0 ml-2" />
+        <div className="hidden md:flex justify-center mt-4">
+          <CarouselPrevious className="static translate-y-0 mr-2" />
+          <CarouselNext className="static translate-y-0 ml-2" />
+        </div>
       </div>
     </Carousel>
   )

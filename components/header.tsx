@@ -13,7 +13,7 @@ export default function Header() {
     <header className="bg-[#222222] text-white border-b border-gray-800 sticky top-0 z-40">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="mr-8">
+          <Link href="/" className="mr-[6rem]">
             <Image
               src="/placeholder.svg?height=40&width=150"
               alt="Vibula Logo"
@@ -22,12 +22,12 @@ export default function Header() {
               className="h-10 w-auto"
             />
           </Link>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/about-us" className="text-white hover:text-red-500 transition-colors">
-              {t('header.about')}
-            </Link>
+          <nav className="hidden md:flex space-x-12">
             <Link href="/services" className="text-white hover:text-red-500 transition-colors">
               {t('header.services')}
+            </Link>
+            <Link href="/about-us" className="text-white hover:text-red-500 transition-colors">
+              {t('header.about')}
             </Link>
             <Link href="/blog" className="text-white hover:text-red-500 transition-colors">
               {t('header.blog')}

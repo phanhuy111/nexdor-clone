@@ -53,7 +53,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                         />
                         <p className="text-lg">
-                            {new Date(post.date).toLocaleDateString()} • Vibula
+                            {new Date(post.date).toLocaleDateString()} • Nexdor
                         </p>
                     </div>
                 </div>

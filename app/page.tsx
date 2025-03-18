@@ -7,6 +7,7 @@ import Footer from "../components/footer"
 import ServicesSlider from "@/components/services-slider"
 import NewsSection from "@/components/blog-section"
 import { useTranslation } from 'react-i18next'
+import router from "next/router"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -47,7 +48,7 @@ export default function Home() {
 
         <ServicesSlider />
 
-        {/* Our Clients Section */}
+        {/* About Us Section */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-xl font-bold mb-8 text-center">{t('home.aboutUs')}</h2>
@@ -58,7 +59,7 @@ export default function Home() {
                 <p className="text-gray-700 mb-4">
                   {t('home.nexdor.description')}
                 </p>
-                <button className="px-6 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+                <button onClick={() => router.push('/about')} className="px-6 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
                   {t('home.nexdor.cta')}
                 </button>
               </div>
@@ -81,7 +82,7 @@ export default function Home() {
         <section className="py-10">
           <div className="container mx-auto px-4">
             <h2 className="text-xl font-bold mb-6 text-center">{t('home.ourClients')}</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
               <Image
                 src="/brands/com-tam-phuc-loc-tho.png"
                 alt="L'OREAL"

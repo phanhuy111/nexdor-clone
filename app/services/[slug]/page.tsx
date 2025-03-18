@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/header'; // Giả định bạn có component Header   
 import { useTranslation } from 'react-i18next';
-import { use } from 'react';
+import { use, useEffect, useState } from 'react';
 
 // Dữ liệu dịch vụ đầy đủ
 const allServices = [
@@ -140,14 +140,47 @@ const findServiceBySlug = (slug: string) => {
     return null;
 };
 
+// Function to fetch related posts
+async function getRelatedPosts({ categoryId, slug }: { categoryId: number; slug: string }) {
+    const res = await fetch(`https://nexdor.tech/wp-json/wp/v2/posts?categories=${categoryId}&slug=${slug}`, {
+        next: { revalidate: 3600 },
+    });
+
+    if (!res.ok) {
+        throw new Error("Failed to fetch related posts");
+    }
+
+    return res.json();
+}
+
 export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
     const { t } = useTranslation();
     const unwrappedParams = use(params as any);
-    const service = findServiceBySlug((unwrappedParams as any)?.slug);
+    const serviceSlug = (unwrappedParams as any)?.slug;
+
+    const service = findServiceBySlug(serviceSlug);
 
     if (!service) {
         notFound();
     }
+
+    const [relatedPosts, setRelatedPosts] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchRelatedPosts = async () => {
+            try {
+                const posts = await getRelatedPosts({ categoryId: 6, slug: serviceSlug });
+                setRelatedPosts(posts);
+            } catch (error) {
+                console.error("Error fetching related posts:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchRelatedPosts();
+    }, [serviceSlug]);
 
     return (
         <>
@@ -203,6 +236,17 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                             </div>
                         )}
                     </div>
+
+                    {/* Related Posts Section */}
+                    {loading ? (
+                        <p>Loading related posts...</p>
+                    ) : (
+                        <div className="mt-12">
+                            <article className="prose max-w-none">
+                                <div dangerouslySetInnerHTML={{ __html: relatedPosts[0].content.rendered }} />
+                            </article>
+                        </div>
+                    )}
                 </div>
             </div>
         </>

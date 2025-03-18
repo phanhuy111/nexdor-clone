@@ -65,16 +65,18 @@ const StatsSection: React.FC = () => {
   return (
     <div
       id="stats-section"
-      className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-6 flex justify-around items-center h-[120px]"
+      className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-6"
     >
-      {stats.map((stat, index) => (
-        <div key={index} className="text-center">
-          <div className="text-4xl font-bold">
-            {counts[index].toLocaleString()}+
+      <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+        {stats.map((stat, index) => (
+          <div key={index} className="text-center">
+            <div className="text-4xl font-bold">
+              {counts[index].toLocaleString()}+
+            </div>
+            <div className="text-sm">{stat.label}</div>
           </div>
-          <div className="text-sm">{stat.label}</div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

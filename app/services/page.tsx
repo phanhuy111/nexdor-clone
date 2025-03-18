@@ -5,9 +5,43 @@ import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { useTranslation } from 'react-i18next'
+import { useEffect, useState } from 'react';
+
+// Function to fetch blog post by slug
+async function getBlogPost(slug: string) {
+  const res = await fetch(`https://nexdor.tech/wp-json/wp/v2/posts?slug=${slug}`, {
+    next: { revalidate: 3600 },
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch blog post");
+  }
+
+  return res.json();
+}
 
 export default function ServicesPage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+  const [blogPost, setBlogPost] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const blogSlug = "services"; // Replace with the actual slug you want to fetch
+
+  useEffect(() => {
+    const fetchBlogPost = async () => {
+      try {
+        const post = await getBlogPost(blogSlug);
+        if (post && post.length > 0) {
+          setBlogPost(post[0]);
+        }
+      } catch (error) {
+        console.error("Error fetching blog post:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogPost();
+  }, [blogSlug]);
 
   const serviceCategories = [
     {
@@ -69,9 +103,9 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex justify-center gap-6">
             {serviceCategories.map((category, index) => (
-              <div key={index} className="rounded-lg border border-gray-200 p-6">
+              <div key={index} className="w-[400px] rounded-lg border border-gray-200 p-6">
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <Image
                     src={category.icon}
@@ -97,6 +131,18 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+
+          {/* Blog Detail Section */}
+          {loading ? (
+            <p>Loading blog post...</p>
+          ) : blogPost ? (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold mb-6">{blogPost.title.rendered}</h2>
+              <div className="mt-4" dangerouslySetInnerHTML={{ __html: blogPost.content.rendered }} />
+            </div>
+          ) : (
+            <p>No blog post found.</p>
+          )}
         </div>
       </div>
       <Footer />

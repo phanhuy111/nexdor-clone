@@ -88,7 +88,7 @@ export default function ServicesSlider() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <div className="flex justify-center mt-8 gap-4">
+                    <div className="hidden md:flex justify-center mt-8 gap-4">
                         <CarouselPrevious />
                         <CarouselNext />
                     </div>

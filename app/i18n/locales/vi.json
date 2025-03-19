@@ -1,11 +1,12 @@
 {
     "header": {
-        "about": "Portfolio",
+        "about": "Về Nexdor",
         "services": "Dịch vụ",
         "blog": "Tin tức",
         "contact": "Liên hệ",
         "consultation": "Tư vấn",
-        "switchLanguage": "Switch to English"
+        "switchLanguage": "Switch to English",
+        "porfolio": "Portfolio"
     },
     "home": {
         "hero": {

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { getFirstImgSrcWithDOMParser } from "@/lib/utils";
 
 export default function NewsSection() {
     const { t } = useTranslation();
@@ -73,56 +74,56 @@ export default function NewsSection() {
                     {posts.length === 0 ? (
                         <p className="text-center text-gray-500">{t('news.noArticles', 'Không có bài viết nào để hiển thị.')}</p>
                     ) : (
-                        posts.map((post: any) => (
-                            <article
-                                key={post.id}
-                                className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-                            >
-                                {/* News Image */}
-                                <div className="w-full h-48">
-                                    <Link href={`/blog/${post.slug}`}>
-                                        <Image
-                                            src={
-                                                post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-                                                "https://chuyendoiso2.maugiaodien.com/wp-content/uploads/2023/05/Chuyen-doi-so-doanh-nghiep.jpg"
-                                            }
-                                            alt={post.title?.rendered || ""}
-                                            width={400}
-                                            height={200}
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </Link>
-                                </div>
-
-                                {/* News Content */}
-                                <div className="p-4 space-y-3">
-                                    <h3 className="text-lg font-bold text-gray-900 hover:text-red-600 transition-colors">
-                                        <Link href={`/news/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title?.rendered || "" }} />
-                                    </h3>
-
-                                    {/* Meta Info */}
-                                    <div className="flex items-center text-sm text-gray-500 space-x-4">
-                                        <span className="flex items-center">
-                                            <i className="far fa-calendar mr-1"></i> {formatDate(post.date)}
-                                        </span>
-                                        <span className="flex items-center">
-                                            <i className="far fa-eye mr-1"></i> {post.views || "0"} {t('news.views', 'lượt xem')}
-                                        </span>
+                        posts.map((post: any) => {
+                            const imgSrc = getFirstImgSrcWithDOMParser(post.content.rendered) || "/placeholder.svg?height=200&width=300"
+                            return (
+                                <article
+                                    key={post.id}
+                                    className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    {/* News Image */}
+                                    <div className="w-full h-48">
+                                        <Link href={`/blog/${post.slug}`}>
+                                            <Image
+                                                src={imgSrc}
+                                                alt={post.title?.rendered || ""}
+                                                width={400}
+                                                height={200}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </Link>
                                     </div>
 
-                                    {/* Excerpt */}
-                                    <p className="text-gray-600 text-sm line-clamp-2" dangerouslySetInnerHTML={{ __html: post.excerpt?.rendered || "" }} />
+                                    {/* News Content */}
+                                    <div className="p-4 space-y-3">
+                                        <h3 className="text-lg font-bold text-gray-900 hover:text-red-600 transition-colors">
+                                            <Link href={`/news/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title?.rendered || "" }} />
+                                        </h3>
 
-                                    {/* Learn More Button */}
-                                    <Link
-                                        href={`/news/${post.slug}`}
-                                        className="inline-block bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-orange-600 transition-colors"
-                                    >
-                                        {t('news.readMore', 'Tìm hiểu thêm')}
-                                    </Link>
-                                </div>
-                            </article>
-                        ))
+                                        {/* Meta Info */}
+                                        <div className="flex items-center text-sm text-gray-500 space-x-4">
+                                            <span className="flex items-center">
+                                                <i className="far fa-calendar mr-1"></i> {formatDate(post.date)}
+                                            </span>
+                                            <span className="flex items-center">
+                                                <i className="far fa-eye mr-1"></i> {post.views || "0"} {t('news.views', 'lượt xem')}
+                                            </span>
+                                        </div>
+
+                                        {/* Excerpt */}
+                                        <p className="text-gray-600 text-sm line-clamp-2" dangerouslySetInnerHTML={{ __html: post.excerpt?.rendered || "" }} />
+
+                                        {/* Learn More Button */}
+                                        <Link
+                                            href={`/news/${post.slug}`}
+                                            className="inline-block bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-orange-600 transition-colors"
+                                        >
+                                            {t('news.readMore', 'Tìm hiểu thêm')}
+                                        </Link>
+                                    </div>
+                                </article>
+                            )
+                        })
                     )}
                 </div>
             </div>

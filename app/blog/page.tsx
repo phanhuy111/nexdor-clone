@@ -2,23 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/header";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Footer from "../../components/footer";
+import { getFirstImgSrcWithDOMParser } from "@/lib/utils";
 
 async function getPosts(categoryId?: number) {
   let url = "https://nexdor.tech/wp-json/wp/v2/posts?_embed";
-
   if (categoryId) {
     url += `&categories=${categoryId}`;
   }
-
   const res = await fetch(url, {
     next: { revalidate: 3600 },
   });
-
   if (!res.ok) {
     throw new Error("Failed to fetch posts");
   }
-
   return res.json();
 }
 
@@ -52,12 +48,11 @@ export default async function BlogPage() {
               <TabsContent value="all" className="mt-0">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {posts.map((post: any) => {
-                    console.log('post', post)
                     return (
                       <div key={post.id} className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                         <Link href={`/blog/${post.slug}`}>
                           <Image
-                            src={post.featured_media ? post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url : "/placeholder.svg?height=200&width=300"}
+                            src={getFirstImgSrcWithDOMParser(post.content.rendered) || "/placeholder.svg?height=200&width=300"}
                             alt={post.title.rendered}
                             width={300}
                             height={200}

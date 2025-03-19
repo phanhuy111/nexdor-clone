@@ -35,7 +35,7 @@ export default function MobileMenu() {
             {t('header.services')}
           </Link>
           <Link
-            href="/porfolio"
+            href="/"
             className="text-white hover:text-red-500 transition-colors"
             onClick={() => setOpen(false)}
           >

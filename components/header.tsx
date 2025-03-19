@@ -29,7 +29,7 @@ export default function Header() {
             <Link href="/services" className="hover:text-red-500 transition-colors">
               {t('header.services')}
             </Link>
-            <Link href="/porfolio" className="hover:text-red-500 transition-colors">
+            <Link href="/" className="hover:text-red-500 transition-colors">
               {t('header.porfolio')}
             </Link>
             <Link href="/blog" className="hover:text-red-500 transition-colors">

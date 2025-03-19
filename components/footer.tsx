@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
                         <Image
-                            src="/placeholder.svg?height=40&width=150"
+                            src="/logo.png"
                             alt="Vibula Logo"
                             width={150}
                             height={40}

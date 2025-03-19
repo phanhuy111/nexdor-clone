@@ -11,7 +11,6 @@ async function getPosts(categoryId?: number) {
     url += `&categories=${categoryId}`;
   }
 
-  console.log('url', url)
   const res = await fetch(url, {
     next: { revalidate: 3600 },
   });
@@ -41,7 +40,7 @@ export default async function BlogPage() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">BLOG</h1>
-          <p className="text-lg md:text-xl">Kiến thức của Vibula về Social và Digital Marketing</p>
+          <p className="text-lg md:text-xl">Kiến thức của Nexdor về Social và Digital Marketing</p>
         </div>
       </section>
 
@@ -58,7 +57,7 @@ export default async function BlogPage() {
                       <div key={post.id} className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                         <Link href={`/blog/${post.slug}`}>
                           <Image
-                            src={post.featured_media ? post._embedded?.["wp:featuredmedia"]?.[0]?.source_url : "/placeholder.svg?height=200&width=300"}
+                            src={post.featured_media ? post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url : "/placeholder.svg?height=200&width=300"}
                             alt={post.title.rendered}
                             width={300}
                             height={200}
@@ -73,7 +72,7 @@ export default async function BlogPage() {
                             />
                           </Link>
                           <p className="text-sm text-gray-500">
-                            {new Date(post.date).toLocaleDateString()} • Vibula
+                            {new Date(post.date).toLocaleDateString()} • Nexdor
                           </p>
                         </div>
                       </div>
@@ -83,45 +82,8 @@ export default async function BlogPage() {
               </TabsContent>
             </Tabs>
           </div>
-
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Main Content */}
-            <div className="lg:w-3/4">
-              <h2 className="text-2xl font-bold mb-6">Bài viết mới nhất</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {posts.slice(0, 3).map((post: any) => (
-                  <div key={post.id} className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                    <Link href={`/blog/${post.slug}`}>
-                      <Image
-                        src={post.featured_media ? post._embedded?.["wp:featuredmedia"]?.[0]?.source_url : "/placeholder.svg?height=200&width=300"}
-                        alt={post.title.rendered}
-                        width={300}
-                        height={200}
-                        className="w-full h-48 object-cover"
-                      />
-                    </Link>
-                    <div className="p-4">
-                      <Link href={`/blog/${post.slug}`} className="block">
-                        <h2
-                          className="text-lg font-bold mb-2 hover:text-red-600 transition-colors"
-                          dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                        />
-                      </Link>
-                      <p className="text-sm text-gray-500">
-                        {new Date(post.date).toLocaleDateString()} • Vibula
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-
-          </div>
         </div>
       </section>
-
-      {/* <Footer /> */}
     </div>
   );
 }

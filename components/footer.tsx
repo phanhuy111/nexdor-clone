@@ -12,7 +12,7 @@ export default function Footer() {
                     <div>
                         <Image
                             src="/logo.png"
-                            alt="Vibula Logo"
+                            alt="Nexdor Logo"
                             width={150}
                             height={40}
                             className="h-10 w-auto mb-4"

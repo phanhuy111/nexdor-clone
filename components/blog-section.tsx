@@ -13,10 +13,9 @@ export default function NewsSection() {
 
     useEffect(() => {
         setIsMounted(true);
-
         async function fetchPosts() {
             try {
-                const res = await fetch("https://nexdor.tech/wp-json/wp/v2/posts?_embed&per_page=3");
+                const res = await fetch("https://nexdor.tech/wp-json/wp/v2/posts?_embed&per_page=3&categories=5");
                 if (!res.ok) {
                     throw new Error("Failed to fetch posts");
                 }
@@ -81,7 +80,7 @@ export default function NewsSection() {
                             >
                                 {/* News Image */}
                                 <div className="w-full h-48">
-                                    <Link href={`/news/${post.slug}`}>
+                                    <Link href={`/blog/${post.slug}`}>
                                         <Image
                                             src={
                                                 post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||

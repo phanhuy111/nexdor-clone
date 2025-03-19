@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
     return (
         <Button
             variant="ghost"
-            className="text-white hover:text-red-500 transition-colors"
+            className="hover:text-red-500 transition-colors"
             onClick={toggleLanguage}
         >
             {t('header.switchLanguage')}

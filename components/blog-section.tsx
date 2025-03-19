@@ -97,7 +97,7 @@ export default function NewsSection() {
                                     {/* News Content */}
                                     <div className="p-4 space-y-3">
                                         <h3 className="text-lg font-bold text-gray-900 hover:text-red-600 transition-colors">
-                                            <Link href={`/news/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title?.rendered || "" }} />
+                                            <Link href={`/blog/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title?.rendered || "" }} />
                                         </h3>
 
                                         {/* Meta Info */}
@@ -115,7 +115,7 @@ export default function NewsSection() {
 
                                         {/* Learn More Button */}
                                         <Link
-                                            href={`/news/${post.slug}`}
+                                            href={`/blog/${post.slug}`}
                                             className="inline-block bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-orange-600 transition-colors"
                                         >
                                             {t('news.readMore', 'Tìm hiểu thêm')}

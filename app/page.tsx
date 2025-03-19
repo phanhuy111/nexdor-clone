@@ -8,6 +8,7 @@ import ServicesSlider from "@/components/services-slider"
 import NewsSection from "@/components/blog-section"
 import { useTranslation } from 'react-i18next'
 import router from "next/router"
+import ContactForm from "@/components/contact-form"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -152,80 +153,7 @@ export default function Home() {
 
         <NewsSection />
 
-        <section className="container mx-auto px-4">
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <h3 className="section-title text-2xl font-bold text-gray-900 mb-4">
-              {t('home.contactForm.title')}
-            </h3>
-
-            <p className="form-text text-gray-600 mb-6">
-              {t('home.contactForm.description')}
-            </p>
-
-            <form id="contactForm" className="space-y-6">
-              <div className="form-row flex flex-col md:flex-row gap-4">
-                <div className="form-group flex-1">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder={t('home.contactForm.namePlaceholder')}
-                    required
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  />
-                </div>
-                <div className="form-group flex-1">
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder={t('home.contactForm.phonePlaceholder')}
-                    required
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  />
-                </div>
-              </div>
-
-              <div className="form-row flex flex-col md:flex-row gap-4">
-                <div className="form-group flex-1">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder={t('home.contactForm.emailPlaceholder')}
-                    required
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  />
-                </div>
-                <div className="form-group flex-1">
-                  <input
-                    type="text"
-                    name="businessArea"
-                    placeholder={t('home.contactForm.businessAreaPlaceholder')}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <textarea
-                  name="message"
-                  placeholder={t('home.contactForm.messagePlaceholder')}
-                  rows={6}
-                  required
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                ></textarea>
-              </div>
-
-              <div className="form-submit text-center">
-                <button
-                  type="submit"
-                  id="submitBtn"
-                  className="w-full md:w-auto px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition duration-300"
-                >
-                  {t('home.contactForm.submitButton')}
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
+        <ContactForm />
       </main>
 
       {/* Footer */}

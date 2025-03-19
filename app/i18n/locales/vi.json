@@ -72,7 +72,10 @@
             "emailPlaceholder": "Địa chỉ email",
             "businessAreaPlaceholder": "Lĩnh vực hoạt động",
             "messagePlaceholder": "Nội dung",
-            "submitButton": "Gửi thông tin"
+            "submitButton": "Gửi thông tin",
+            "submitting": "Đang gửi...",
+            "successTitle": "Gửi thành công!",
+            "successDescription": "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất."
         }
     },
     "blog": {

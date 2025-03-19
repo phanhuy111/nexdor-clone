@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import BlogContent from "@/components/blog-content"
 
 // Fetch single post data
 async function getPost(slug: string) {
@@ -65,9 +64,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content */}
                         <div className="flex-1">
-                            <article className="prose max-w-none">
-                                <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                            </article>
+                            <BlogContent content={post.content.rendered} />
 
                             {/* Share Buttons */}
                             <div className="mt-8 border-t border-b py-6">

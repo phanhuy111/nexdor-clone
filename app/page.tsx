@@ -21,30 +21,26 @@ export default function Home() {
       {/* Main Content */}
       <main>
         {/* Hero Video Section */}
-        <section className="relative h-screen w-full overflow-hidden">
-          {/* Video Background */}
+        <section className="relative h-[40vh] md:h-screen w-full overflow-hidden">
           <div className="absolute inset-0 w-full h-full overflow-hidden">
-            <iframe
-              className="w-full h-full scale-125"
-              src="https://www.youtube.com/embed/1F3jfWlG3xA?controls=0&rel=0&playsinline=1&enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=1F3jfWlG3xA"
+            <video
+              className="w-full h-full object-contain md:object-cover"
+              src="./video-banner.mp4"
               title="VIBULA 2024 ver2"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{
                 pointerEvents: 'none',
                 position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                minWidth: '100%',
-                minHeight: '100%',
-                objectFit: 'cover'
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%'
               }}
             />
           </div>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </section>
 
         <ServicesSlider />

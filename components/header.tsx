@@ -41,7 +41,9 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center space-x-4">
-          <LanguageSwitcher />
+          <div className="hidden md:block">
+            <LanguageSwitcher />
+          </div>
           <MobileMenu />
         </div>
       </div>

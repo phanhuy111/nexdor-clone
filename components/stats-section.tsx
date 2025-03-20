@@ -1,13 +1,16 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const StatsSection: React.FC = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { value: 748, label: 'Ngày làm việc' },
-    { value: 691, label: 'Buổi tư vấn' },
-    { value: 25000, label: 'Đơn hàng' },
-    { value: 689, label: 'Cửa hàng TMĐT' },
+    { value: 748, labelKey: 'workingDays' },
+    { value: 691, labelKey: 'consultations' },
+    { value: 25000, labelKey: 'orders' },
+    { value: 689, labelKey: 'ecommerceStores' },
   ];
 
   const [counts, setCounts] = useState<number[]>(new Array(stats.length).fill(0));
@@ -73,7 +76,7 @@ const StatsSection: React.FC = () => {
             <div className="text-4xl font-bold">
               {counts[index].toLocaleString()}+
             </div>
-            <div className="text-sm">{stat.label}</div>
+            <div className="text-sm">{t(stat.labelKey)}</div>
           </div>
         ))}
       </div>

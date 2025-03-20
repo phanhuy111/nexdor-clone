@@ -67,12 +67,12 @@ export default function NewsSection() {
             <div className="container mx-auto px-4">
                 {/* Section Badge */}
                 <div className="flex justify-center mb-4">
-                    <h2 className="text-xl font-bold mb-6 text-center">{t('news.title', 'Tin tức')}</h2>
+                    <h2 className="text-xl font-bold mb-6 text-center">{t('news.title')}</h2>
                 </div>
                 {/* News Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {posts.length === 0 ? (
-                        <p className="text-center text-gray-500">{t('news.noArticles', 'Không có bài viết nào để hiển thị.')}</p>
+                        <p className="text-center text-gray-500">{t('news.noArticles')}</p>
                     ) : (
                         posts.map((post: any) => {
                             const imgSrc = getFirstImgSrcWithDOMParser(post.content.rendered) || "/placeholder.svg?height=200&width=300"
@@ -106,7 +106,7 @@ export default function NewsSection() {
                                                 <i className="far fa-calendar mr-1"></i> {formatDate(post.date)}
                                             </span>
                                             <span className="flex items-center">
-                                                <i className="far fa-eye mr-1"></i> {post.views || "0"} {t('news.views', 'lượt xem')}
+                                                <i className="far fa-eye mr-1"></i> {post.views || "0"} {t('news.views')}
                                             </span>
                                         </div>
 
@@ -118,7 +118,7 @@ export default function NewsSection() {
                                             href={`/blog/${post.slug}`}
                                             className="inline-block bg-[#33ccff] text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-[#33ccff] transition-colors"
                                         >
-                                            {t('news.readMore', 'Tìm hiểu thêm')}
+                                            {t('news.readMore')}
                                         </Link>
                                     </div>
                                 </article>

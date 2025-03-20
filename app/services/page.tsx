@@ -68,39 +68,16 @@ export default function ServicesPage() {
   return (
     <>
       <Header />
-      <div className="min-h-[600px] bg-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="container mx-auto px-4 py-12">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-              {/* Image Column (Left) */}
-              <div className="w-full md:w-1/2 lg:w-5/12">
-                <div className="w-full h-auto">
-                  <Image
-                    src="https://chuyendoiso2.maugiaodien.com/wp-content/uploads/2023/05/giai-phap.png"
-                    alt={t('services.solutionImageAlt')}
-                    width={540}
-                    height={502}
-                    className="w-full h-auto object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-
-              {/* Content Column (Right) */}
-              <div className="w-full md:w-1/2 lg:w-7/12">
-                <div className="space-y-4">
-                  <p className="text-red-600 font-semibold">{t('services.solutionTitle')}</p>
-                  <div className="h-4"></div>
-                  <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-                    <span>{t('services.leadSolution.part1')}</span>
-                    <span>{t('services.leadSolution.part2')}<br /></span>
-                    <span>{t('services.leadSolution.part3')}</span>
-                  </h1>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {t('services.leadSolution.description')}
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div className="h-full bg-white">
+        <div className="flex flex-col gap-10">
+          <div className="container w-full h-auto">
+            <Image
+              src="/banner1.jpg"
+              alt={t('services.solutionImageAlt')}
+              width={540}
+              height={502}
+              className="w-full h-[500px] object-cover rounded-lg"
+            />
           </div>
 
           <div className="flex justify-center gap-6">
@@ -131,7 +108,7 @@ export default function ServicesPage() {
           {loading ? (
             <p>Loading blog post...</p>
           ) : blogPost ? (
-            <div className="mt-12">
+            <div className="container">
               <h2 className="text-2xl font-bold mb-6">{blogPost.title.rendered}</h2>
               <div className="mt-4" dangerouslySetInnerHTML={{ __html: blogPost.content.rendered }} />
             </div>

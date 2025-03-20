@@ -53,11 +53,11 @@ export default function ServicesSlider() {
             <div className="container mx-auto px-4 flex flex-col gap-10">
                 <div className="w-full flex justify-center">
                     <h2 className="w-[70%] text-center text-xl md:text-xl font-bold text-gray-800 leading-relaxed md:leading-normal">
-                        Với
-                        <strong className="text-[#33ccff]"> bộ giải pháp của Nexdor Solutions</strong> sẽ giúp hoàn thiện hoạt động chuyển đổi số cho doanh nghiệp phát triển thành
-                        <strong className="text-[#33ccff]"> doanh nghiệp số</strong>,
-                        <br className="hidden md:block" /> cho phép
-                        <strong className="text-[#33ccff]"> tự động hoá quy trình</strong> kinh doanh đa kênh để bứt phá doanh số
+                        {t('services.sliderHeading.part1')}{" "}
+                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part2')}</strong> {t('services.sliderHeading.part3')}{" "}
+                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part4')}</strong>,
+                        <br className="hidden md:block" /> {t('services.sliderHeading.part5')}{" "}
+                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part6')}</strong> {t('services.sliderHeading.part7')}
                     </h2>
                 </div>
 

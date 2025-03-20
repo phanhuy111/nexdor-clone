@@ -66,7 +66,7 @@
         "ourClients": "Khách hàng của chúng tôi",
         "contactForm": {
             "title": "Để lại thông tin liên hệ",
-            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của TAS sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
+            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của Nexdor Solutions sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
             "namePlaceholder": "Họ và tên",
             "phonePlaceholder": "Số điện thoại",
             "emailPlaceholder": "Địa chỉ email",
@@ -78,6 +78,16 @@
             "successDescription": "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất."
         }
     },
+    "news": {
+        "title": "Tin tức",
+        "noArticles": "Không có bài viết nào để hiển thị.",
+        "views": "lượt xem",
+        "readMore": "Xem thêm"
+    },
+    "workingDays": "Ngày làm việc",
+    "consultations": "Tư vấn",
+    "orders": "Đơn hàng",
+    "ecommerceStores": "Cửa hàng E-commerce",
     "blog": {
         "title": "BLOG",
         "subtitle": "Kiến thức của Vibula về Social và Digital Marketing",
@@ -104,6 +114,15 @@
             "part2": "chuyển đổi số<br />",
             "part3": "về quản lý & chăm sóc khách hàng",
             "description": "Chúng tôi tạo ra đòn bẩy cho doanh nghiệp phát triển<br /> trở thành doanh nghiệp số, cho phép tự động hoá quy trình<br /> kinh doanh đa kênh để bứt phá doanh số."
+        },
+        "sliderHeading": {
+            "part1": "Với",
+            "part2": "bộ giải pháp của Nexdor Solutions",
+            "part3": "sẽ giúp hoàn thiện hoạt động chuyển đổi số cho doanh nghiệp phát triển thành",
+            "part4": "doanh nghiệp số",
+            "part5": "cho phép",
+            "part6": "tự động hoá quy trình",
+            "part7": "kinh doanh đa kênh để bứt phá doanh số"
         },
         "categories": {
             "branding": {
@@ -169,7 +188,7 @@
         },
         "form": {
             "title": "Để lại thông tin liên hệ",
-            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của TAS sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
+            "description": "Với lòng nhập đủ thông tin liên hệ của bạn, nhân viên của Nexdor Solutions sẽ liên hệ sớm nhất để giải đáp và tư vấn cho bạn.",
             "namePlaceholder": "Họ và tên",
             "phonePlaceholder": "Số điện thoại",
             "emailPlaceholder": "Địa chỉ email",

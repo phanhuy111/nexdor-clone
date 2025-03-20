@@ -132,7 +132,19 @@
         },
         "benefits": {
             "title": "Benefits"
-        }
+        },
+        "brandConsulting": "Brand Consulting",
+        "brandConsultingDescription": "Brand consulting is a process of analyzing the current brand situation and developing a strategy to improve the brand's position in the market.",
+        "brandDevelopment": "Brand Development",
+        "brandDevelopmentDescription": "Brand development is a process of creating a new brand or improving an existing brand.",
+        "brandDesign": "Brand Design",
+        "brandDesignDescription": "Brand design is a process of designing a new brand or improving an existing brand.",
+        "eCommerce": "E-Commerce",
+        "eCommerceDescription": "E-commerce (Shopee, Lazada, TiktokShop…) is a trend that has been growing rapidly and attracting a lot of attention recently. If your business wants to expand its sales on e-commerce platforms but doesn't know where to start, or wants to optimize paid advertising on the platform, please refer to the solutions of Nexdor.",
+        "qCommerce": "Q-Commerce",
+        "qCommerceDescription": "Q-commerce (GrabFood, ShopeeFood, beFood…) is a trend that has been growing rapidly and attracting a lot of attention recently. If your business wants to expand its sales on q-commerce platforms but doesn't know where to start, or wants to optimize paid advertising on the platform, please refer to the solutions of Nexdor.",
+        "socialCommerce": "Social Commerce",
+        "socialCommerceDescription": "Social commerce is a process of using social media platforms to sell products or services."
     },
     "contact": {
         "hero": {

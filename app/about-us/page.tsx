@@ -21,8 +21,8 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-center mb-10">{t('aboutUs.title')}</h2>
 
           <div className="flex justify-center">
-            <div className="border-2 border-red-600 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-center text-red-600 font-bold mb-4">{t('aboutUs.companyName')}</h3>
+            <div className="border-2 border-[#33ccff] rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-center text-[#33ccff] font-bold mb-4">{t('aboutUs.companyName')}</h3>
               <div className="text-center">
                 <p className="mb-2">
                   {t('aboutUs.description')}

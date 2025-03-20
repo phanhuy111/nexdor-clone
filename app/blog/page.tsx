@@ -28,7 +28,7 @@ export default async function BlogPage() {
       {/* Hero Banner */}
       <section className="relative h-[400px]">
         <Image
-          src="/placeholder.svg?height=400&width=1200"
+          src="/banner.png"
           alt="Blog Banner"
           width={1200}
           height={400}

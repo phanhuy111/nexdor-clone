@@ -106,7 +106,7 @@ export default function ServicesPage() {
           <div className="flex justify-center gap-6">
             {serviceCategories.map((category, index) => (
               <div key={index} className="w-[400px] rounded-lg border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[#33ccff] rounded-lg flex items-center justify-center mb-4">
                   <Image
                     src={category.icon}
                     alt={category.title}
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                         href={`/services/${service.slug}`}
                         className="flex items-center cursor-pointer hover:text-red-600 transition-colors"
                       >
-                        <div className="w-2 h-2 bg-red-600 rounded-full mr-2"></div>
+                        <div className="w-2 h-2 bg-[#33ccff] rounded-full mr-2"></div>
                         {service.name}
                       </Link>
                     </li>

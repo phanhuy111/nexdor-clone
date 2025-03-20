@@ -65,7 +65,7 @@ const StatsSection: React.FC = () => {
   return (
     <div
       id="stats-section"
-      className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-6"
+      className="w-full bg-[#33ccff] text-white py-6"
     >
       <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
         {stats.map((stat, index) => (

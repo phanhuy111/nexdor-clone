@@ -178,7 +178,7 @@ export default function ContactForm() {
               type="submit"
               id="submitBtn"
               disabled={loading}
-              className="w-full md:w-auto px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full md:w-auto px-6 py-3 bg-[#33ccff] text-white font-semibold rounded-lg hover:bg-[#33ccff] transition duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {loading ? t('home.contactForm.submitting') || "Đang gửi..." : t('home.contactForm.submitButton')}
             </button>

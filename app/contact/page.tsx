@@ -55,10 +55,10 @@ export default function ContactPage() {
       <Header />
 
       <main className="">
-        <section className="hero bg-gradient-to-r from-orange-600 to-orange-800 text-white py-16">
+        <section className="hero bg-gradient-to-r from-[#33ccff] to-[#00aae3] text-white py-16">
           <div className="container mx-auto px-6">
             <div className="company-label justify-center flex items-center mb-6">
-              <div className="icon-circle bg-orange-500 text-white rounded-full p-2 mr-2">
+              <div className="icon-circle bg-[#33ccff] text-white rounded-full p-2 mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -209,7 +209,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       id="submitBtn"
-                      className="w-full md:w-auto px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition duration-300"
+                      className="w-full md:w-auto px-6 py-3 bg-[#33ccff] text-white font-semibold rounded-lg hover:bg-orange-700 transition duration-300"
                     >
                       {t('contact.form.submitButton')}
                     </button>

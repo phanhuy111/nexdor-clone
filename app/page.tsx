@@ -52,11 +52,11 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-20 items-center">
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                <h2 className="text-4xl font-bold text-red-600 mb-4">{t('home.nexdor.title')}</h2>
-                <p className="text-gray-700 mb-4">
+                <h2 className="text-4xl font-bold text-[#33ccff] mb-4">{t('home.nexdor.title')}</h2>
+                <p className="text-black mb-4">
                   {t('home.nexdor.description')}
                 </p>
-                <button className="px-6 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+                <button className="px-6 py-2 border border-[#33ccff] text-[#33ccff] rounded-full hover:bg-[#33ccff] hover:text-white transition duration-300">
                   <Link href="/about-us">
                     {t('home.nexdor.cta')}
                   </Link>

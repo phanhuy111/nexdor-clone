@@ -116,7 +116,7 @@ export default function NewsSection() {
                                         {/* Learn More Button */}
                                         <Link
                                             href={`/blog/${post.slug}`}
-                                            className="inline-block bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-orange-600 transition-colors"
+                                            className="inline-block bg-[#33ccff] text-white text-sm font-medium py-2 px-4 rounded-full hover:bg-[#33ccff] transition-colors"
                                         >
                                             {t('news.readMore', 'Tìm hiểu thêm')}
                                         </Link>

@@ -31,7 +31,6 @@ async function getRelatedPosts() {
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
     const post = await getPost(params.slug);
-    const relatedPosts = await getRelatedPosts();
 
     return (
         <div className="min-h-screen bg-white text-black">
@@ -39,7 +38,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             {/* Hero Banner */}
             <section className="relative h-[400px]">
                 <Image
-                    src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/placeholder.svg?height=400&width=1200"}
+                    src="/banner.png"
                     alt={post.title.rendered}
                     width={1200}
                     height={400}

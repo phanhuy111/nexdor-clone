@@ -106,15 +106,10 @@ export default function ServicesPage() {
           <div className="flex justify-center gap-6">
             {serviceCategories.map((category, index) => (
               <div key={index} className="w-[400px] rounded-lg border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-[#33ccff] rounded-lg flex items-center justify-center mb-4">
-                  <Image
-                    src={category.icon}
-                    alt={category.title}
-                    width={24}
-                    height={24}
-                  />
-                </div>
-                <h3 className="font-bold text-lg mb-3">{category.title}</h3>
+
+                <h3 className="font-bold text-lg mb-3 text-center text-white bg-gradient-to-r from-[#33ccff] to-[#00aae3] p-2 rounded-lg">
+                  {category.title}
+                </h3>
                 <ul className="space-y-2 text-sm">
                   {category.services.map((service, serviceIndex) => (
                     <li key={serviceIndex}>

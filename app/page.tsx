@@ -7,8 +7,8 @@ import Footer from "../components/footer"
 import ServicesSlider from "@/components/services-slider"
 import NewsSection from "@/components/blog-section"
 import { useTranslation } from 'react-i18next'
-import router from "next/router"
 import ContactForm from "@/components/contact-form"
+import Link from "next/link"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -60,8 +60,10 @@ export default function Home() {
                 <p className="text-gray-700 mb-4">
                   {t('home.nexdor.description')}
                 </p>
-                <button onClick={() => router.push('/about')} className="px-6 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
-                  {t('home.nexdor.cta')}
+                <button className="px-6 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+                  <Link href="/about-us">
+                    {t('home.nexdor.cta')}
+                  </Link>
                 </button>
               </div>
               <div className="w-full md:w-1/2">

@@ -15,7 +15,7 @@ export default function BlogContent({ content }: BlogContentProps) {
 
       <style jsx global>{`
         .blog-content img {
-          width: 100% !important;
+          width: 70% !important;
           height: auto !important;
           display: block !important;
           margin-left: auto !important;

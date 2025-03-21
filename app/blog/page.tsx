@@ -28,16 +28,12 @@ export default async function BlogPage() {
       {/* Hero Banner */}
       <section className="relative h-[400px]">
         <Image
-          src="/banner.png"
+          src="/banner-blog.png"
           alt="Blog Banner"
           width={1200}
           height={400}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">BLOG</h1>
-          <p className="text-lg md:text-xl">Kiến thức của Nexdor về Social và Digital Marketing</p>
-        </div>
       </section>
 
       {/* Blog Content */}

@@ -38,28 +38,24 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             {/* Hero Banner */}
             <section className="relative h-[400px]">
                 <Image
-                    src="/banner.png"
+                    src="/banner-blog.png"
                     alt={post.title.rendered}
                     width={1200}
                     height={400}
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
-                    <div className="container mx-auto px-4 text-center">
-                        <h1
-                            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
-                            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                        />
-                        <p className="text-lg">
-                            {new Date(post.date).toLocaleDateString()} • Nexdor
-                        </p>
-                    </div>
-                </div>
+
             </section>
 
             {/* Blog Content */}
             <section className="py-12">
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto px-4 text-center">
+                    <h1
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+                        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                    />
+                </div>
+                <div className="container mx-auto mt-12 px-4">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content */}
                         <div className="flex-1">

@@ -39,7 +39,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/us/giá trị cốt lõi.png"
                 alt={t('aboutUs.teamImageAlt')}
                 width={400}
                 height={300}
@@ -60,7 +60,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/us/tầm nhìn chúng tôi.png"
                 alt={t('aboutUs.visionImageAlt')}
                 width={400}
                 height={300}
@@ -80,7 +80,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/us/sứ mệnh.png"
                 alt={t('aboutUs.missionImageAlt')}
                 width={400}
                 height={300}

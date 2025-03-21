@@ -63,7 +63,7 @@ export default function Home() {
                 </button>
               </div>
               <div className="w-full md:w-1/2">
-                <img src="https://chuyendoiso2.maugiaodien.com/wp-content/uploads/2023/05/11.png" alt={t('home.nexdor.imageAlt')} className="w-full h-auto" />
+                <img src="/banner-us.png" alt={t('home.nexdor.imageAlt')} className="w-full h-auto" />
               </div>
             </div>
           </div>

@@ -52,7 +52,7 @@ export default function ServicesSlider() {
         <section className="py-12 bg-gray-50">
             <div className="container mx-auto px-4 flex flex-col gap-10">
                 <div className="w-full flex justify-center">
-                    <h2 className="w-[70%] text-center text-xl md:text-xl font-bold text-gray-800 leading-relaxed md:leading-normal">
+                    <h2 className="w-full md:w-[70%] text-center text-xl md:text-xl font-bold text-gray-800 leading-relaxed md:leading-normal">
                         {t('services.sliderHeading.part1')}{" "}
                         <strong className="text-[#33ccff]">{t('services.sliderHeading.part2')}</strong> {t('services.sliderHeading.part3')}{" "}
                         <strong className="text-[#33ccff]">{t('services.sliderHeading.part4')}</strong>,

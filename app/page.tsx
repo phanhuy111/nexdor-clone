@@ -21,7 +21,7 @@ export default function Home() {
       {/* Main Content */}
       <main>
         {/* Hero Video Section */}
-        <section className="relative h-[40vh] md:h-screen w-full overflow-hidden">
+        <section className="relative h-[25vh] md:h-screen w-full overflow-hidden">
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <video
               className="w-full h-full object-contain md:object-cover"

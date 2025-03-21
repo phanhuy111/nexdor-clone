@@ -2,7 +2,6 @@
 
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
-import { Button } from '@/components/ui/button'
 
 export default function LanguageSwitcher() {
     const { i18n, t } = useTranslation()
@@ -17,18 +16,20 @@ export default function LanguageSwitcher() {
 
     const toggleLanguage = () => {
         const newLang = i18n.language === 'en' ? 'vi' : 'en'
-        console.log('Changing language to:', newLang) // Debug log
         i18n.changeLanguage(newLang)
         localStorage.setItem('i18nextLng', newLang)
     }
 
     return (
-        <Button
-            variant="ghost"
-            className="hover:text-red-500 transition-colors"
+        <button
+            className={`flex items-center p-2 rounded transition-colors duration-300`}
             onClick={toggleLanguage}
         >
-            {t('header.switchLanguage')}
-        </Button>
+            <img
+                src={i18n.language === 'vi' ? "/vi.svg" : "/en.svg"}
+                alt={i18n.language === 'vi' ? "Vietnamese Flag" : "English Flag"}
+                className="w-[24px] h-[24px] mr-2"
+            />
+        </button>
     )
 } 

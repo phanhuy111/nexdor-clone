@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/header";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getFirstImgSrcWithDOMParser } from "@/lib/utils";
+import { getFirstImgSrcWithDOMParser, ENDPOINT_URL } from "@/lib/utils";
 
 async function getPosts(categoryId?: number) {
-  let url = "https://nexdor.tech/wp-json/wp/v2/posts?_embed";
+  let url = `${ENDPOINT_URL}/wp-json/wp/v2/posts?_embed`;
   if (categoryId) {
     url += `&categories=${categoryId}`;
   }

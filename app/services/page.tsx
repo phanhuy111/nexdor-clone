@@ -6,10 +6,11 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react';
+import { ENDPOINT_URL } from "@/lib/utils";
 
 // Function to fetch blog post by slug
 async function getBlogPost(slug: string) {
-  const res = await fetch(`https://nexdor.tech/wp-json/wp/v2/posts?slug=${slug}`, {
+  const res = await fetch(`${ENDPOINT_URL}/wp-json/wp/v2/posts?slug=${slug}`, {
     next: { revalidate: 3600 },
   });
 

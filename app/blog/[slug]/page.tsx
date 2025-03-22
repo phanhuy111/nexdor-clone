@@ -1,10 +1,12 @@
 import Image from "next/image"
-import Link from "next/link"
 import BlogContent from "@/components/blog-content"
+import { ENDPOINT_URL } from "@/lib/utils";
+import { use } from "react";
+import { notFound } from "next/navigation";
 
 // Fetch single post data
 async function getPost(slug: string) {
-    const res = await fetch(`https://nexdor.tech/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
+    const res = await fetch(`${ENDPOINT_URL}/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
         next: { revalidate: 3600 },
     });
 
@@ -16,21 +18,13 @@ async function getPost(slug: string) {
     return posts[0];
 }
 
-// Fetch related posts
-async function getRelatedPosts() {
-    const res = await fetch("https://nexdor.tech/wp-json/wp/v2/posts?per_page=3&_embed", {
-        next: { revalidate: 3600 },
-    });
-
-    if (!res.ok) {
-        throw new Error("Failed to fetch related posts");
-    }
-
-    return res.json();
-}
-
 export default async function BlogPost({ params }: { params: { slug: string } }) {
-    const post = await getPost(params.slug);
+    const unwrappedParams = use(params as any);
+    const post = await getPost((unwrappedParams as any)?.slug);
+
+    if (!post) {
+        notFound();
+    }
 
     return (
         <div className="min-h-screen bg-white text-black">

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { getFirstImgSrcWithDOMParser } from "@/lib/utils";
+import { getFirstImgSrcWithDOMParser, ENDPOINT_URL } from "@/lib/utils";
 
 export default function NewsSection() {
     const { t } = useTranslation();
@@ -16,7 +16,7 @@ export default function NewsSection() {
         setIsMounted(true);
         async function fetchPosts() {
             try {
-                const res = await fetch("https://nexdor.tech/wp-json/wp/v2/posts?_embed&per_page=3&categories=5");
+                const res = await fetch(`${ENDPOINT_URL}/wp-json/wp/v2/posts?_embed&per_page=3&categories=5`);
                 if (!res.ok) {
                     throw new Error("Failed to fetch posts");
                 }

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Header from '@/components/header'; // Giả định bạn có component Header   
 import { useTranslation } from 'react-i18next';
 import { use, useEffect, useState } from 'react';
-
+import { ENDPOINT_URL } from '@/lib/utils';
 // Dữ liệu dịch vụ đầy đủ
 const allServices = [
     {
@@ -142,7 +142,7 @@ const findServiceBySlug = (slug: string) => {
 
 // Function to fetch related posts
 async function getRelatedPosts({ categoryId, slug }: { categoryId: number; slug: string }) {
-    const res = await fetch(`https://nexdor.tech/wp-json/wp/v2/posts?categories=${categoryId}&slug=${slug}`, {
+    const res = await fetch(`${ENDPOINT_URL}/wp-json/wp/v2/posts?categories=${categoryId}&slug=${slug}`, {
         next: { revalidate: 3600 },
     });
 

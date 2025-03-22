@@ -19,8 +19,7 @@ async function getPost(slug: string) {
 }
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
-    const unwrappedParams = use(params as any);
-    const post = await getPost((unwrappedParams as any)?.slug);
+    const post = await getPost(params.slug);
 
     if (!post) {
         notFound();
@@ -28,7 +27,6 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
     return (
         <div className="min-h-screen bg-white text-black">
-
             {/* Hero Banner */}
             <section className="relative h-[400px]">
                 <Image

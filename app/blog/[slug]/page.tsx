@@ -3,6 +3,7 @@ import BlogContent from "@/components/blog-content"
 import { ENDPOINT_URL } from "@/lib/utils";
 import { use } from "react";
 import { notFound } from "next/navigation";
+import Header from "@/components/header";
 
 // Fetch single post data
 async function getPost(slug: string) {
@@ -27,6 +28,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
     return (
         <div className="min-h-screen bg-white text-black">
+            <Header />
+
             {/* Hero Banner */}
             <section className="relative h-[400px]">
                 <Image

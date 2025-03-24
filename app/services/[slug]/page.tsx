@@ -239,12 +239,15 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
 
                     {/* Related Posts Section */}
                     {loading ? (
-                        <p>Loading related posts...</p>
+                        <></>
                     ) : (
-                        <div className="mt-12">
-                            <article className="prose max-w-none">
-                                <div dangerouslySetInnerHTML={{ __html: relatedPosts[0].content.rendered }} />
-                            </article>
+                        <div className="py-8 mt-8 flex justify-center">
+                            <div className="w-full md:w-[80%] max-w-5xl bg-white rounded-xl shadow-2xl p-8 md:p-10 border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-3xl">
+                                <div
+                                    className="prose prose-lg prose-indigo max-w-none leading-loose tracking-wide text-gray-800"
+                                    dangerouslySetInnerHTML={{ __html: relatedPosts[0].content.rendered }}
+                                />
+                            </div>
                         </div>
                     )}
                 </div>

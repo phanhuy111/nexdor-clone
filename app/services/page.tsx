@@ -107,14 +107,18 @@ export default function ServicesPage() {
 
           {/* Blog Detail Section */}
           {loading ? (
-            <p>Loading blog post...</p>
+            <></>
           ) : blogPost ? (
-            <div className="container">
-              <h2 className="text-2xl font-bold mb-6">{blogPost.title.rendered}</h2>
-              <div className="mt-4" dangerouslySetInnerHTML={{ __html: blogPost.content.rendered }} />
+            <div className="py-8 mt-8 flex justify-center">
+              <div className="w-full md:w-[80%] max-w-5xl bg-white rounded-xl shadow-2xl p-8 md:p-10 border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-3xl">
+                <div
+                  className="prose prose-lg prose-indigo max-w-none leading-loose tracking-wide text-gray-800"
+                  dangerouslySetInnerHTML={{ __html: blogPost.content.rendered }}
+                />
+              </div>
             </div>
           ) : (
-            <p>No blog post found.</p>
+            <></>
           )}
         </div>
       </div>

@@ -244,7 +244,8 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                         <div className="py-8 mt-8 flex justify-center">
                             <div className="w-full md:w-[80%] max-w-5xl bg-white rounded-xl shadow-2xl p-8 md:p-10 border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-3xl">
                                 <div
-                                    className="prose prose-lg prose-indigo max-w-none leading-loose tracking-wide text-gray-800"
+                                    className="prose prose-lg prose-indigo max-w-none leading-loose tracking-wide text-gray-800 
+                  prose-ul:pl-5 prose-ul:space-y-2 prose-li:marker:text-indigo-500 prose-li:pl-1"
                                     dangerouslySetInnerHTML={{ __html: relatedPosts[0].content.rendered }}
                                 />
                             </div>

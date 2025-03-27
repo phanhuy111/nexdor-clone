@@ -77,7 +77,7 @@ export default function Home() {
               className="border-2 border-[#33ccff] rounded-lg p-6 hover:shadow-lg transition-shadow"
             >
               <h3 className="text-center text-[#33ccff] font-bold mb-4">{t('aboutUs.companyName')}</h3>
-              <div className="text-center">
+              <div className="text-center w-[80%] mx-auto">
                 <p className="mb-2">
                   {t('aboutUs.description')}
                 </p>

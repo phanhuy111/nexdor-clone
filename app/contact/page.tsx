@@ -136,9 +136,9 @@ export default function ContactPage() {
               <motion.img
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                src="https://chuyendoiso2.maugiaodien.com/wp-content/uploads/2023/05/contacts_01-1.jpg"
+                src="/banner-contact.png"
                 alt={t('contact.hero.imageAlt')}
-                className="w-full h-auto rounded-lg shadow-md"
+                className="w-full h-auto"
               />
             </motion.div>
           </div>
@@ -194,13 +194,22 @@ export default function ContactPage() {
 
                 <motion.div
                   variants={slideUp}
-                  className="info-block"
+                  className="info-block mb-4"
+                >
+                  <h4 className="info-title text-lg font-medium text-gray-800 mb-2">
+                    {t('contact.info.businessHours')}
+                  </h4>
+                  <p className="info-detail text-gray-600">9:00 am - 6:00 pm (From Mon - Fri)</p>
+                </motion.div>
+
+                {/* <motion.div
+                  variants={slideUp}
                 >
                   <h4 className="info-title text-lg font-medium text-gray-800 mb-2">
                     {t('contact.info.email')}
                   </h4>
                   <p className="info-email text-gray-600">{t('contact.info.emailAddress')}</p>
-                </motion.div>
+                </motion.div> */}
               </motion.div>
 
               {/* Contact Form */}

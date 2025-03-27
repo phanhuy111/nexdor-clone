@@ -32,23 +32,14 @@ export default function Footer() {
                                     {t('footer.services.items.webDevelopment')}
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="#" className="hover:text-white transition-colors">
-                                    {t('footer.services.items.branding')}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="hover:text-white transition-colors">
-                                    {t('footer.services.items.consulting')}
-                                </Link>
-                            </li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">{t('footer.contact.title')}</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li>{t('footer.contact.email')}: partner@nexdor.tech</li>
+                            <li>{t('footer.contact.email')}: ha@nexdor.tech</li>
                             <li>{t('footer.contact.phone')}: (+84) 028 7777 6666</li>
+                            <li>{t('footer.contact.businessHours')}: 9:00 am - 6:00 pm (From Mon - Fri)</li>
                             <li>{t('footer.contact.address')}: 24 Huỳnh Khương Ninh, phường Đa Kao, quận 1, TP. Hồ Chí Minh</li>
                         </ul>
                     </div>

@@ -13,7 +13,7 @@ const solutions = [
 export default function NexdorSolutions() {
     return (
         <div className="bg-white text-black p-8 mt-16">
-            <div className="w-[60%] mx-auto">
+            <div className="w-full md:w-[60%] mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-4">Nexdor Solution is a provider of <span className="text-[#33ccff]">Direct-to-Customer (D2C)</span> Solution for Brands</h1>
                 <p className="text-center mb-8">
                     Our mission is to develop a comprehensive ecosystem and help businesses grow efficiently. We invest in technology and build the strong team in the market with outstanding omni-commerce expertise and passion for serving clients. We connect expertise to create one-stop solutions and data-driven products with continuous innovations to empower businesses to unlock digital market growth potential.

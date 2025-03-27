@@ -98,8 +98,8 @@ export default function PartnerSection() {
                                 {category.images.map((image, imgIndex) => (
                                     <motion.div
                                         key={imgIndex}
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        animate={{ opacity: 1, scale: 1 }}
                                         transition={{ duration: 0.3, delay: imgIndex * 0.05 }}
                                         whileHover={{ scale: 1.05 }}
                                         className="flex items-center justify-center p-4"

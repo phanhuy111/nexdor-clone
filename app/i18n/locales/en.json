@@ -168,11 +168,12 @@
             "title": "Contact Information",
             "companyName": "NEXDOR VIETNAM CO., LTD",
             "headquarters": "Headquarters:",
+            "businessHours": "Business Hours",
             "address": "24 Huynh Khuong Ninh, Da Kao Ward, District 1, Ho Chi Minh City",
             "phone": "Phone:",
             "phoneNumber": "(+84) 028 7777 6666",
             "email": "Email Address:",
-            "emailAddress": "partner@nexdor.tech"
+            "emailAddress": "ha@nexdor.tech"
         },
         "form": {
             "title": "Leave Your Contact Information",
@@ -224,6 +225,7 @@
             "title": "Contact",
             "email": "Email Address",
             "phone": "Phone",
+            "businessHours": "Business Hours",
             "address": "Address"
         },
         "allRightsReserved": "All rights reserved."

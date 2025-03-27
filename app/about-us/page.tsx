@@ -78,7 +78,7 @@ export default function AboutUs() {
                 className="flex flex-col items-center text-center gap-4 border-2 border-gray-200 rounded-lg p-4 h-[200px] cursor-pointer hover:border-[#33ccff] transition-colors"
               >
                 <div className="w-[100px] h-[100px] flex items-center justify-center">
-                  <Image src="/us/Market research & Localization.png" alt="Lập kế hoạch & Mục tiêu" width={120} height={120} />
+                  <Image src="/us/Market research & Localization.png" alt="Market research & Localization" width={120} height={120} />
                 </div>
                 <p className="text-sm font-semibold text-gray-800">
                   Market research & Localization
@@ -94,7 +94,7 @@ export default function AboutUs() {
                 className="flex flex-col items-center text-center gap-4 border-2 border-gray-200 rounded-lg p-4 h-[200px] cursor-pointer hover:border-[#33ccff] transition-colors"
               >
                 <div className="w-[100px] h-[100px] flex items-center justify-center">
-                  <Image src="/us/D2C Solution.png" alt="Lập kế hoạch & Mục tiêu" width={120} height={120} />
+                  <Image src="/us/D2C Solution.png" alt="D2C Solution" width={120} height={120} />
                 </div>
                 <p className="text-sm font-semibold text-gray-800">
                   D2C Solution
@@ -110,7 +110,7 @@ export default function AboutUs() {
                 className="flex flex-col items-center text-center gap-4 border-2 border-gray-200 rounded-lg p-4 h-[200px] cursor-pointer hover:border-[#33ccff] transition-colors"
               >
                 <div className="w-[100px] h-[100px] flex items-center justify-center">
-                  <Image src="/us/Branding & Marketing Solution.png" alt="Lập kế hoạch & Mục tiêu" width={120} height={120} />
+                  <Image src="/us/Branding & Marketing Solution.png" alt="Branding & Marketing Solution" width={120} height={120} />
                 </div>
                 <p className="text-sm font-semibold text-gray-800">
                   Branding & Marketing Solution
@@ -126,7 +126,7 @@ export default function AboutUs() {
                 className="flex flex-col items-center text-center gap-4 border-2 border-gray-200 rounded-lg p-4 h-[200px] cursor-pointer hover:border-[#33ccff] transition-colors"
               >
                 <div className="w-[100px] h-[100px] flex items-center justify-center">
-                  <Image src="/us/Distribution.png" alt="Lập kế hoạch & Mục tiêu" width={120} height={120} />
+                  <Image src="/us/Distribution.png" alt="Distribution" width={120} height={120} />
                 </div>
                 <p className="text-sm font-semibold text-gray-800">
                   Distribution
@@ -167,6 +167,11 @@ export default function AboutUs() {
               <p className="text-gray-700 mb-4">
                 {t('aboutUs.coreValues.description')}
               </p>
+              <ul className="list-disc list-inside space-y-2">
+                <li className="text-gray-600">In-depth Market Research</li>
+                <li className="text-gray-600">Strategic Planning</li>
+                <li className="text-gray-600">Brand Development</li>
+              </ul>
             </motion.div>
           </div>
         </motion.section>
@@ -202,10 +207,27 @@ export default function AboutUs() {
               <p className="text-gray-700 mb-4">
                 {t('aboutUs.vision.description')}
               </p>
+              <div className="space-y-4">
+                <p className="font-semibold">Omni-commerce</p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li className="text-gray-600">Quick commerce</li>
+                  <li className="text-gray-600">Ecommerce</li>
+                  <li className="text-gray-600">Social commerce</li>
+                  <li className="text-gray-600">Brand commerce</li>
+                </ul>
+                <p className="font-semibold">OmO Activation</p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li className="text-gray-600">Booth Activation</li>
+                  <li className="text-gray-600">MoMo Activation</li>
+                  <li className="text-gray-600">Web/ Zalo Activation</li>
+                </ul>
+                <p className="font-semibold">Technology solution</p>
+              </div>
             </motion.div>
           </div>
         </motion.section>
 
+        {/* Our Mission Section */}
         <motion.section
           id="mission"
           initial="hidden"
@@ -236,10 +258,15 @@ export default function AboutUs() {
               <p className="text-gray-700 mb-4">
                 {t('aboutUs.mission.description')}
               </p>
+              <ul className="list-disc list-inside space-y-2">
+                <li className="text-gray-600">Marketing Strategy</li>
+                <li className="text-gray-600">Branding Communication</li>
+              </ul>
             </motion.div>
           </div>
         </motion.section>
 
+        {/* Distribution Section */}
         <motion.section
           id="distribution"
           initial="hidden"
@@ -270,6 +297,11 @@ export default function AboutUs() {
               <p className="text-gray-700 mb-4">
                 {t('aboutUs.distribution.description')}
               </p>
+              <ul className="list-disc list-inside space-y-2">
+                <li className="text-gray-600">GT (General Trade)</li>
+                <li className="text-gray-600">MT (Supermarket, CVS, Mini mart,...)</li>
+                <li className="text-gray-600">HORECA (Hotels, Restaurants, Cafés)</li>
+              </ul>
             </motion.div>
           </div>
         </motion.section>

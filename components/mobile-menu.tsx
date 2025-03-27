@@ -5,7 +5,6 @@ import Link from "next/link"
 import { useTranslation } from 'react-i18next'
 import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import LanguageSwitcher from "./language-switcher"
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false)
@@ -29,34 +28,12 @@ export default function MobileMenu() {
             {t('header.about')}
           </Link>
           <Link
-            href="/services"
-            className="hover:text-red-500 transition-colors"
-            onClick={() => setOpen(false)}
-          >
-            {t('header.services')}
-          </Link>
-          <Link
-            href="/"
-            className="hover:text-red-500 transition-colors"
-            onClick={() => setOpen(false)}
-          >
-            {t('header.porfolio')}
-          </Link>
-          <Link
-            href="/blog"
-            className="hover:text-red-500 transition-colors"
-            onClick={() => setOpen(false)}
-          >
-            {t('header.blog')}
-          </Link>
-          <Link
             href="/contact"
             className="hover:text-red-500 transition-colors"
             onClick={() => setOpen(false)}
           >
             {t('header.contact')}
           </Link>
-          <LanguageSwitcher />
         </nav>
       </SheetContent>
     </Sheet>

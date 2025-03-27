@@ -14,7 +14,7 @@ export default function ServicesSlider() {
             id: 1,
             title: t("services.brandConsulting"),
             description: t("services.brandConsultingDescription"),
-            icon: "/services/tư vấn thương hiệu nd.png"
+            icon: "/services/tư vấn thương hiệu.png"
         },
         {
             id: 2,
@@ -44,34 +44,25 @@ export default function ServicesSlider() {
             id: 6,
             title: t("services.socialCommerce"),
             description: t("services.socialCommerceDescription"),
-            icon: "/services/social com.png"
+            icon: "/services/social.png"
         }
     ]
 
     return (
         <section className="py-12 bg-gray-50">
             <div className="container mx-auto px-4 flex flex-col gap-10">
-                <div className="w-full flex justify-center">
-                    <h2 className="w-full md:w-[70%] text-center text-xl md:text-xl font-bold text-gray-800 leading-relaxed md:leading-normal">
-                        {t('services.sliderHeading.part1')}{" "}
-                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part2')}</strong> {t('services.sliderHeading.part3')}{" "}
-                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part4')}</strong>,
-                        <br className="hidden md:block" /> {t('services.sliderHeading.part5')}{" "}
-                        <strong className="text-[#33ccff]">{t('services.sliderHeading.part6')}</strong> {t('services.sliderHeading.part7')}
-                    </h2>
-                </div>
-
                 <Carousel
                     opts={{
                         align: "start",
                         loop: true,
+
                     }}
                     className="w-full max-w-7xl mx-auto"
                 >
                     <CarouselContent className="-ml-2 md:-ml-4">
                         {services.map((service) => (
-                            <CarouselItem key={service.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                                <Card className="relative h-[515px] p-5 group cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                            <CarouselItem key={service.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4">
+                                <Card className="relative h-[400px] p-5 group cursor-pointer hover:shadow-lg transition-shadow duration-300">
                                     <CardContent className="p-0">
                                         <div className="bg-white rounded-full flex items-center justify-center">
                                             <Image

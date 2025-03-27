@@ -26,24 +26,12 @@ export default function Header() {
             <Link href="/about-us" className="hover:text-red-500 transition-colors">
               {t('header.about')}
             </Link>
-            <Link href="/services" className="hover:text-red-500 transition-colors">
-              {t('header.services')}
-            </Link>
-            <Link href="/" className="hover:text-red-500 transition-colors">
-              {t('header.porfolio')}
-            </Link>
-            <Link href="/blog" className="hover:text-red-500 transition-colors">
-              {t('header.blog')}
-            </Link>
             <Link href="/contact" className="hover:text-red-500 transition-colors">
               {t('header.contact')}
             </Link>
           </nav>
         </div>
         <div className="flex items-center space-x-4">
-          <div className="hidden md:block">
-            <LanguageSwitcher />
-          </div>
           <MobileMenu />
         </div>
       </div>

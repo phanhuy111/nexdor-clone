@@ -58,8 +58,8 @@
         "aboutUs": "Về chúng tôi",
         "nexdor": {
             "title": "Nexdor Solutions",
-            "description": "Nexdor Solutions tự hào với đội ngũ chuyên viên giàu kinh nghiệm và sự am hiểu sâu sắc về thị trường, chúng tôi giúp doanh nghiệp tạo ra những chiến lược thương hiệu đột phá, từ thiết kế nhận diện đến định vị và truyền thông, giúp doanh nghiệp ghi dấu ấn mạnh mẽ trên thị trường. Bên cạnh đó, Nexdor Solutions còn hỗ trợ tối ưu gian hàng đa nền tảng giúp doanh nghiệp tiếp cận khách hàng mục tiêu, tăng hiển thị và gia tăng doanh thu bền vững. Chúng tôi không chỉ là đối tác mà còn là người đồng hành tin cậy, cam kết cùng bạn chinh phục mọi mục tiêu và tạo nên những giá trị bền vững.",
-            "cta": "Xem chi tiết",
+            "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
+            "cta": "Learn more",
             "imageAlt": "Về Nexdor Solutions"
         },
         "customerReviews": "Nhận xét từ khách hàng",
@@ -156,18 +156,18 @@
         "benefits": {
             "title": "Lợi ích"
         },
-        "brandConsulting": "Tư vấn thương hiệu",
-        "brandConsultingDescription": "Định hướng thương hiệu và hệ thống hóa nhận diện thương hiệu luôn là một vấn đề quan trọng khi muốn mở rộng quy mô và nâng tầm vị thế doanh nghiệp. Nexdor với tâm thế mang lại giải pháp và đồng hành cùng mục tiêu của khách hàng sẽ cùng nghiên cứu phân tích từ nội tại doanh nghiệp tới các yếu tố ngoại cảnh, để xác định được hướng đi phù hợp cho quá trình truyền thông về thương hiệu sau này.",
-        "brandDevelopment": "Xây dựng và phát triển thương hiệu",
-        "brandDevelopmentDescription": "Một thương hiệu đã có sẵn nhưng vẫn còn nhiều tiềm năng phát triển hoặc những vấn đề cần khắc phục? Hay chỉ đơn giản là bạn muốn bổ sung thêm các hạng mục để làm nguyên liệu cho quá trình truyền thông.Hãy cùng Nexdor nghiên cứu hiện trạng và giúp thương hiệu phát triển hơn, thông qua việc hệ thống hóa, tạo lập định hướng và xây dựng các sản phẩm thiết kế tuân thủ và đồng bộ.",
-        "brandDesign": "Thiết kế thương hiệu",
-        "brandDesignDescription": "Nexdor Solutions mang đến sự đồng bộ, nhất quán và khác biệt vào bộ nhận diện, giúp doanh nghiệp dễ dàng phát triển mọi hạng mục thiết kế nhận diện thương hiệu từ đơn giản đến phức tạp một cách có hệ thống.",
-        "eCommerce": "Dịch vụ E-commerce",
-        "eCommerceDescription": "E-commerce (Shopee, Lazada, TiktokShop…)  trở thành một kênh có xu hướng phát triển bùng nổ và thu hút nhiều sự quan tâm thời gian gần đây. Nếu doanh nghiệp bạn muốn mở rộng bán hàng trên các sàn E-commerce nhưng không biết bắt đầu từ đâu, hay tối ưu quảng cáo trả phí các sản phẩm trên sàn thì hãy tham khảo ngay các giải pháp của Nexdor.",
-        "qCommerce": "Dịch vụ Q-Commerce",
-        "qCommerceDescription": "Q-commerce (GrabFood, ShopeeFood, beFood…)  trở thành một kênh có xu hướng phát triển bùng nổ và thu hút nhiều sự quan tâm thời gian gần đây. Nếu doanh nghiệp bạn muốn mở rộng bán hàng trên các sàn Q-commerce nhưng không biết bắt đầu từ đâu, hay tối ưu quảng cáo trả phí các sản phẩm trên sàn thì hãy tham khảo ngay các giải pháp của Nexdor.",
-        "socialCommerce": "Dịch vụ Social Commerce",
-        "socialCommerceDescription": "Nexdor Solutions cung cấp dịch vụ Social Commerce chuyên nghiệp, giúp doanh nghiệp tận dụng tối đa sức mạnh của các nền tảng mạng xã hội như Facebook, Instagram, TikTok và Zalo để tiếp cận khách hàng mục tiêu và tăng doanh số bán hàng. Với chiến lược nội dung sáng tạo, quảng cáo tối ưu và quản lý hiệu quả các kênh bán hàng trực tiếp, chúng tôi giúp thương hiệu của bạn nổi bật giữa đám đông và tạo dựng mối quan hệ bền chặt với khách hàng. Nexdor cam kết mang đến giải pháp toàn diện, biến mạng xã hội thành kênh bán hàng hiệu quả và gia tăng giá trị thương hiệu của bạn!"
+        "brandConsulting": "Integrated solutions",
+        "brandConsultingDescription": "Hand-crafted solution for unique, complex brand situation.",
+        "brandDevelopment": "Unbiased planning",
+        "brandDevelopmentDescription": "As a planning agency, we consult our client to choose the most effective strategy and the best tactics without preferring any.",
+        "brandDesign": "Transparency",
+        "brandDesignDescription": "It is a must to maintain a strong link between the coordinator and all team members, as well as the client.",
+        "eCommerce": "Open to communications",
+        "eCommerceDescription": "Most of the problems can be solved with direct communication. interstellar always willing to listen with integrity to actively solve any issues arise from.",
+        "qCommerce": "Specialization work",
+        "qCommerceDescription": "Each agency member does what they do best, and with a good coordinator, good results are ensured.",
+        "socialCommerce": "Results driven",
+        "socialCommerceDescription": "Focusing on deliverables, keeping the objectives in mind all the time and so whatever that works."
     },
     "contact": {
         "hero": {

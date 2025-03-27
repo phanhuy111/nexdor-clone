@@ -7,10 +7,8 @@ const StatsSection: React.FC = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { value: 748, labelKey: 'workingDays' },
-    { value: 691, labelKey: 'consultations' },
-    { value: 25000, labelKey: 'orders' },
-    { value: 689, labelKey: 'ecommerceStores' },
+    { value: 60, labelKey: 'clients' },
+    { value: 200, labelKey: 'projects' }
   ];
 
   const [counts, setCounts] = useState<number[]>(new Array(stats.length).fill(0));

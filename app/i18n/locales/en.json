@@ -9,15 +9,11 @@
         "porfolio": "Portfolio"
     },
     "home": {
-        "hero": {
-            "title": "Growth Value for Your Business",
-            "subtitle": "We help businesses achieve sustainable growth through digital innovation",
-            "cta": "Get Started"
-        },
+        "platforms": "Our Platforms",
         "about": {
             "title": "Nexdor Solutions",
-            "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding. We assist businesses in creating breakthrough brand strategies, from identity design to positioning and communication, helping them make a strong mark in the market. Additionally, Nexdor Solutions supports multi-platform store optimization, enabling businesses to reach target customers, increase visibility, and sustainably boost revenue. We are not just partners but also trusted companions, committed to helping you conquer every goal and create lasting value.",
-            "cta": "View Details",
+            "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
+            "cta": "Learn more",
             "imageAlt": "About Nexdor Solutions"
         },
         "clients": {
@@ -58,8 +54,8 @@
         "aboutUs": "About Us",
         "nexdor": {
             "title": "Nexdor Solutions",
-            "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding. We assist businesses in creating breakthrough brand strategies, from identity design to positioning and communication, helping them make a strong mark in the market. Additionally, Nexdor Solutions supports multi-platform store optimization, enabling businesses to reach target customers, increase visibility, and sustainably boost revenue. We are not just partners but also trusted companions, committed to helping you conquer every goal and create lasting value.",
-            "cta": "View Details",
+            "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
+            "cta": "Learn more",
             "imageAlt": "About Nexdor Solutions"
         },
         "customerReviews": "Customer Reviews",
@@ -78,16 +74,8 @@
             "successDescription": "We will contact you as soon as possible."
         }
     },
-    "news": {
-        "title": "News",
-        "noArticles": "No articles to display.",
-        "views": "views",
-        "readMore": "Read More"
-    },
-    "workingDays": "Working Days",
-    "consultations": "Consultations",
-    "orders": "Orders",
-    "ecommerceStores": "E-commerce Stores",
+    "clients": "Clients",
+    "projects": "Projects",
     "blog": {
         "title": "BLOG",
         "subtitle": "Vibula’s Knowledge on Social and Digital Marketing",
@@ -156,18 +144,18 @@
         "benefits": {
             "title": "Benefits"
         },
-        "brandConsulting": "Brand Consulting",
-        "brandConsultingDescription": "Brand orientation and systemizing brand identity are always critical when aiming to scale up and elevate a business’s position. With a mindset of providing solutions and aligning with client goals, Nexdor will analyze everything from internal business factors to external elements, determining the right direction for future brand communication.",
-        "brandDevelopment": "Brand Building & Development",
-        "brandDevelopmentDescription": "Does your existing brand still have untapped potential or issues to resolve? Or do you simply want to add more elements to fuel your communication efforts? Let Nexdor study your current state and help your brand grow through systemization, establishing direction, and creating consistent, compliant design products.",
-        "brandDesign": "Brand Design",
-        "brandDesignDescription": "Nexdor Solutions brings consistency, coherence, and uniqueness to your brand identity, enabling businesses to easily develop all aspects of brand design—from simple to complex—in a systematic way.",
-        "eCommerce": "E-commerce Services",
-        "eCommerceDescription": "E-commerce (Shopee, Lazada, TikTok Shop, etc.) has become a booming channel attracting significant attention recently. If your business wants to expand sales on e-commerce platforms but doesn’t know where to start or how to optimize paid ads for products, explore Nexdor’s solutions now.",
-        "qCommerce": "Q-Commerce Services",
-        "qCommerceDescription": "Q-commerce (GrabFood, ShopeeFood, BeFood, etc.) has become a booming channel attracting significant attention recently. If your business wants to expand sales on Q-commerce platforms but doesn’t know where to start or how to optimize paid ads for products, explore Nexdor’s solutions now.",
-        "socialCommerce": "Social Commerce Services",
-        "socialCommerceDescription": "Nexdor Solutions provides professional Social Commerce services, helping businesses maximize the power of social media platforms like Facebook, Instagram, TikTok, and Zalo to reach target customers and boost sales. With creative content strategies, optimized advertising, and efficient management of direct sales channels, we help your brand stand out and build lasting customer relationships. Nexdor is committed to delivering comprehensive solutions, turning social media into an effective sales channel and enhancing your brand’s value!"
+        "brandConsulting": "Integrated solutions",
+        "brandConsultingDescription": "Hand-crafted solution for unique, complex brand situation.",
+        "brandDevelopment": "Unbiased planning",
+        "brandDevelopmentDescription": "As a planning agency, we consult our client to choose the most effective strategy and the best tactics without preferring any.",
+        "brandDesign": "Transparency",
+        "brandDesignDescription": "It is a must to maintain a strong link between the coordinator and all team members, as well as the client.",
+        "eCommerce": "Open to communications",
+        "eCommerceDescription": "Most of the problems can be solved with direct communication. interstellar always willing to listen with integrity to actively solve any issues arise from.",
+        "qCommerce": "Specialization work",
+        "qCommerceDescription": "Each agency member does what they do best, and with a good coordinator, good results are ensured.",
+        "socialCommerce": "Results driven",
+        "socialCommerceDescription": "Focusing on deliverables, keeping the objectives in mind all the time and so whatever that works."
     },
     "contact": {
         "hero": {
@@ -206,15 +194,19 @@
         "teamImageAlt": "Nexdor Team",
         "coreValues": {
             "title": "Core Values",
-            "description": "At Nexdor Solutions, we base our operations on three core values: Creativity, Professionalism, and Commitment to Results. These values not only guide all our activities but also serve as our promise to clients of reliability and superior quality."
+            "description": "We offer deep, comprehensive insights into the Vietnamese market, equipping you with the knowledge to make informed strategic decisions and unlock success. With our expertise, you can confidently navigate the market and seize growth opportunities."
         },
         "vision": {
             "title": "Our Vision",
-            "description": "In the next 10 years, Nexdor Solutions aims to become a leading strategic partner in multi-channel commerce and brand building, accompanying over 1,000 brands—not only in the domestic market but also expanding our influence regionally and internationally. We strive to build a comprehensive service ecosystem where brands can find optimal solutions for sustainable growth and effective competition in the digital era."
+            "description": "Nexdor equips you with a cutting-edge D2C technology platform, enabling you to seamlessly build and manage your direct-to-consumer sales channels."
         },
         "mission": {
             "title": "Mission",
-            "description": "Walking alongside brands on their journey to conquer the market and build sustainable value, we are committed to providing comprehensive and creative solutions in multi-channel commerce and brand building. We help clients not only achieve business goals but also establish a solid position in consumers’ minds. With this mission, Nexdor Solutions tirelessly strives to be a vital part of brands’ development journeys, contributing to inspiring success stories."
+            "description": "Xanh Marketing will be your trusted partner throughout every stage of your marketing journey, from strategic planning to flawless campaign execution, ensuring your brand stands out and resonates deeply with Vietnamese consumers."
+        },
+        "distribution": {
+            "title": "Distribution",
+            "description": "With an expansive distribution network and strategic partnerships across 53 provinces, Vigo ensures your products reach every corner of the Vietnamese market from bustling cities to the most remote rural areas."
         }
     },
     "footer": {

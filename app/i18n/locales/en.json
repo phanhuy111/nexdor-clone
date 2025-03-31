@@ -1,6 +1,6 @@
 {
     "header": {
-        "about": "About Nexdor",
+        "about": "Our Solutions",
         "services": "Services",
         "blog": "News",
         "contact": "Contact",
@@ -9,47 +9,11 @@
         "porfolio": "Portfolio"
     },
     "home": {
-        "platforms": "Our Platforms",
         "about": {
             "title": "Nexdor Solutions",
             "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
             "cta": "Learn more",
             "imageAlt": "About Nexdor Solutions"
-        },
-        "clients": {
-            "title": "Our Clients"
-        },
-        "partners": {
-            "title": "Our Partners"
-        },
-        "testimonials": {
-            "title": "Customer Testimonials",
-            "items": [
-                {
-                    "content": "Sạp Lê La was a completely new brand, so we faced numerous challenges in the early stages of building our image and operating on e-commerce platforms. Nexdor helped us optimize everything from A to Z: setting up the store, creating content, devising reasonable pricing and promotion strategies, and running effective ads.",
-                    "company": "Sạp Lê La"
-                },
-                {
-                    "content": "Previously, Đậu Má Mix had stores on food delivery platforms but they weren’t optimized, and performance was low. Partnering with Nexdor Solutions helped our stores improve everything from visuals and content to pricing strategies, making operations smoother.",
-                    "company": "Đậu Má Mix"
-                },
-                {
-                    "content": "From a small takeout rice stall, Cơm tấm Ba Lộc now has nearly 10 hubs and is about to open a dine-in restaurant. Thanks to Nexdor, our brand was professionally built from the logo and Uncle Ba Lộc character to a polished fanpage, helping Ba Lộc reach customers more effectively.",
-                    "company": "Cơm tấm Ba Lộc"
-                },
-                {
-                    "content": "Gà Nướng Ò Ó O is a brand with a widespread store network, but optimizing our online stores still had limitations. Thanks to Nexdor, we significantly improved our visuals, content, pricing, and promotion strategies on food delivery platforms.",
-                    "company": "Gà Nướng Ò Ó O"
-                },
-                {
-                    "content": "When Lucky Pao started online business, we struggled to attract customers and operate our store efficiently. Nexdor optimized every aspect—from brand building and image enhancement to running well-structured marketing campaigns.",
-                    "company": "Lucky Pao"
-                }
-            ]
-        },
-        "services": {
-            "title": "Our Solutions",
-            "viewMore": "View More"
         },
         "aboutUs": "About Us",
         "nexdor": {
@@ -59,7 +23,7 @@
             "imageAlt": "About Nexdor Solutions"
         },
         "customerReviews": "Customer Reviews",
-        "ourClients": "Our Clients",
+        "ourClients": "Our Partners",
         "contactForm": {
             "title": "Leave Your Contact Information",
             "description": "By providing your full contact details, Nexdor Solutions staff will reach out to you as soon as possible to answer questions and offer consultation.",
@@ -76,74 +40,9 @@
     },
     "clients": "Clients",
     "projects": "Projects",
-    "blog": {
-        "title": "BLOG",
-        "subtitle": "Vibula’s Knowledge on Social and Digital Marketing",
-        "categories": {
-            "all": "All",
-            "socialCommerce": "Social Commerce",
-            "digitalMarketing": "Digital Marketing",
-            "eCommerce": "E-Commerce",
-            "tiktok": "TikTok"
-        },
-        "latestPosts": "Latest Posts",
-        "popularPosts": "Popular Posts",
-        "sharePost": "Share Post",
-        "relatedPosts": "Related Posts",
-        "readMore": "Read More"
-    },
     "services": {
         "title": "Our Services",
         "subtitle": "We provide comprehensive solutions to help your business thrive in the digital era",
-        "solutionTitle": "Nexdor Solutions Multi-Channel Solution",
-        "solutionImageAlt": "Solution Illustration",
-        "sliderHeading": {
-            "part1": "With",
-            "part2": "Nexdor Solutions' solutions",
-            "part3": "will help complete the digital transformation activities for businesses to develop into",
-            "part4": "digital enterprises",
-            "part5": "allowing",
-            "part6": "automating the",
-            "part7": "multi-channel business processes to break through sales"
-        },
-        "leadSolution": {
-            "part1": "Leading Solutions ",
-            "part2": "for Digital Transformation<br />",
-            "part3": "in Management & Customer Care",
-            "description": "We create leverage for businesses to grow<br /> into digital enterprises, enabling automation of multi-channel business processes<br /> to break through revenue barriers."
-        },
-        "categories": {
-            "branding": {
-                "title": "Branding Services",
-                "items": {
-                    "consulting": "Brand Consulting",
-                    "development": "Brand Building & Development",
-                    "design": "Brand Design",
-                    "performance": "Digital Performance"
-                }
-            },
-            "commerce": {
-                "title": "Multi-Channel Commerce",
-                "items": {
-                    "ecommerce": "E-commerce Services",
-                    "qcommerce": "Q-Commerce Services",
-                    "social": "Social Commerce"
-                }
-            }
-        },
-        "cta": {
-            "needHelp": "Need More Advice?",
-            "contactUs": "Contact Us Now"
-        },
-        "breadcrumb": {
-            "services": "Services"
-        },
-        "features": {
-            "title": "Key Features"
-        },
-        "benefits": {
-            "title": "Benefits"
-        },
         "brandConsulting": "Integrated solutions",
         "brandConsultingDescription": "Hand-crafted solution for unique, complex brand situation.",
         "brandDevelopment": "Unbiased planning",
@@ -194,15 +93,15 @@
         "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding, delivering creative, personalized strategies to help clients optimize business performance and build strong brands. At Nexdor Solutions, we are not just partners but trusted companions, committed to helping you achieve every goal and create lasting value. Let us help you tell your brand story in an impressive and successful way!",
         "teamImageAlt": "Nexdor Team",
         "coreValues": {
-            "title": "Core Values",
+            "title": "Market research & Localization",
             "description": "We offer deep, comprehensive insights into the Vietnamese market, equipping you with the knowledge to make informed strategic decisions and unlock success. With our expertise, you can confidently navigate the market and seize growth opportunities."
         },
         "vision": {
-            "title": "Our Vision",
+            "title": "D2C Solution",
             "description": "Nexdor equips you with a cutting-edge D2C technology platform, enabling you to seamlessly build and manage your direct-to-consumer sales channels."
         },
         "mission": {
-            "title": "Mission",
+            "title": "Branding & Marketing Solution",
             "description": "Xanh Marketing will be your trusted partner throughout every stage of your marketing journey, from strategic planning to flawless campaign execution, ensuring your brand stands out and resonates deeply with Vietnamese consumers."
         },
         "distribution": {

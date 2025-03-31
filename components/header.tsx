@@ -23,7 +23,7 @@ export default function Header() {
             />
           </Link>
           <nav className="hidden md:flex space-x-16">
-            <Link href="/about-us" className="hover:text-red-500 transition-colors">
+            <Link href="/solution" className="hover:text-red-500 transition-colors">
               {t('header.about')}
             </Link>
             <Link href="/contact" className="hover:text-red-500 transition-colors">

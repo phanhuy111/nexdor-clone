@@ -52,10 +52,10 @@ export default function AboutUs() {
         >
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <Image
-              className="w-full h-full object-fill"
               src="/home/banner-logo.png"
               alt="banner"
               fill
+              className="w-full h-full object-cover"
             />
           </div>
         </motion.section>
@@ -143,7 +143,7 @@ export default function AboutUs() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideUp}
-          className="container mx-auto px-4 mb-16 mt-16"
+          className="container mx-auto px-4"
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div

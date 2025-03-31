@@ -21,7 +21,7 @@ export default function MobileMenu() {
       <SheetContent side="right" className="w-[300px] border-gray-800">
         <nav className="flex flex-col space-y-4">
           <Link
-            href="/about-us"
+            href="/solution"
             className="hover:text-red-500 transition-colors"
             onClick={() => setOpen(false)}
           >

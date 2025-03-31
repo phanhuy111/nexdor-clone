@@ -1,14 +1,10 @@
 'use client'
 
 import Image from "next/image"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
 import { useTranslation } from "react-i18next"
-
 
 export default function ServicesSlider() {
     const { t } = useTranslation();
-
     const services = [
         {
             id: 1,
@@ -49,44 +45,21 @@ export default function ServicesSlider() {
     ]
 
     return (
-        <section className="py-12 bg-gray-50">
-            <div className="container mx-auto px-4 flex flex-col gap-10">
-                <Carousel
-                    opts={{
-                        align: "start",
-                        loop: true,
-
-                    }}
-                    className="w-full max-w-7xl mx-auto"
-                >
-                    <CarouselContent className="-ml-2 md:-ml-4">
-                        {services.map((service) => (
-                            <CarouselItem key={service.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4">
-                                <Card className="relative h-[400px] p-5 group cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                                    <CardContent className="p-0">
-                                        <div className="bg-white rounded-full flex items-center justify-center">
-                                            <Image
-                                                src={service.icon}
-                                                alt={service.title}
-                                                width={200}
-                                                height={200}
-                                                className="w-[200px] h-[200px] object-contain"
-                                            />
-                                        </div>
-                                        <div>
-                                            <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                                            <p className="text-gray-600 text-sm">{service.description}</p>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <div className="hidden md:flex justify-center mt-8 gap-4">
-                        <CarouselPrevious />
-                        <CarouselNext />
-                    </div>
-                </Carousel>
+        <section className="bg-gray-50">
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {services.map((service) => (
+                        <div key={service.id} className="flex flex-row items-center bg-white rounded-lg shadow-lg p-5 transition-shadow duration-300 hover:shadow-xl">
+                            <div className="bg-gray-100 rounded-full p-6 mb-4 flex items-center justify-center">
+                                <Image src={service.icon} alt={service.title} width={60} height={60} className="object-contain" />
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold mb-2 text-center">{service.title}</h3>
+                                <p className="text-gray-600 text-center text-sm">{service.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )

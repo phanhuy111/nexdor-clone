@@ -9,7 +9,7 @@ export default function FixedActionButtons() {
     };
 
     return (
-        <div className="fixed bottom-10 right-10 flex flex-col gap-4 z-50">
+        <div className="fixed bottom-10 right-5 md:right-10 flex flex-col gap-4 z-50">
             <Link
                 href="tel:+84123456789"
                 className="bg-[#33ccff] hover:bg-[#33ccff] text-white p-3 rounded-full transition-colors flex items-center justify-center shadow-lg"

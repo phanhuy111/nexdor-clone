@@ -4,17 +4,11 @@ import Image from "next/image"
 import { useTranslation } from "react-i18next"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const fadeIn = {
     hidden: { opacity: 0, y: 75 },
     visible: { opacity: 1, y: 0 },
-};
-
-// Reusable component for animated number display
-const AnimatedNumber = ({ value, isVisible }: { value: number; isVisible: boolean }) => {
-    const [displayValue, setDisplayValue] = useState(0);
-    return displayValue;
 };
 
 const MetricCard = ({ value, label, isVisible }: { value: number | string; label: string; isVisible: boolean }) => {
@@ -117,10 +111,10 @@ export default function FootprintSection() {
                     transition={{ duration: 1.8, delay: 0.4 }}
                     className="space-y-6"
                 >
-                    <BulletPoint value={200} label="Project Comunication" isVisible={inView} />
-                    <BulletPoint value={100000} label="Influencers/KOLs-KOCs" isVisible={inView} />
-                    <BulletPoint value={60} label="Clients" isVisible={inView} />
-                    <BulletPoint value={53} label="Provinces nationwide" heading={"Distribution network across"} isVisible={inView} />
+                    <BulletPoint value={200} label="Project Comunication" />
+                    <BulletPoint value={100000} label="Influencers/KOLs-KOCs" />
+                    <BulletPoint value={60} label="Clients" />
+                    <BulletPoint value={53} label="Provinces nationwide" heading={"Distribution network across"} />
                 </motion.div>
             </div>
         </motion.section>

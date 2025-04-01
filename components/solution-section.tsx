@@ -28,8 +28,8 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 animate={{
                     opacity: 1,
                     scale: 1,
-                    width: isActive ? "400px" : "200px",
-                    height: isActive ? "400px" : "200px",
+                    width: isActive ? (window.innerWidth < 768 ? "200px" : "300px") : (window.innerWidth < 768 ? "100px" : "150px"),
+                    height: isActive ? (window.innerWidth < 768 ? "200px" : "300px") : (window.innerWidth < 768 ? "100px" : "150px"),
                     zIndex: isActive ? 10 : 1,
                 }}
                 transition={{
@@ -41,8 +41,9 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 className={`
                     flex items-center justify-center bg-[#f0f4f8] border-2 border-[#33ccff] 
                     rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer
-                    md:w-[${isActive ? "400px" : "150px"}]
-                    md:h-[${isActive ? "400px" : "150px"}]
+                    w-[100px] h-[100px]
+                    sm:w-[120px] sm:h-[120px]
+                    md:w-[150px] md:h-[150px]
                     relative overflow-hidden
                 `}
                 onMouseEnter={() => setHoveredIndex(index)}
@@ -51,11 +52,11 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 {isActive ? (
                     <div className="flex items-center">
                         <div className="text-center">
-                            <p className="text-sm text-gray-600 max-w-[220px]">{solution.description}</p>
+                            <p className="text-xs md:text-sm text-gray-600 max-w-[180px] md:max-w-[220px]">{solution.description}</p>
                         </div>
                     </div>
                 ) : (
-                    <h2 className="text-sm md:text-lg font-semibold text-center mb-1 p-2">{solution.title}</h2>
+                    <h2 className="text-xs sm:text-sm md:text-base font-semibold text-center mb-1 p-1 md:p-2">{solution.title}</h2>
                 )}
             </motion.div>
         </div>
@@ -66,20 +67,20 @@ export default function NexdorSolutions() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <div className="bg-white text-black px-8">
+        <div className="bg-white text-black px-4 md:px-8">
             <div className="w-full md:w-[60%] mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
                     Nexdor Solution is a provider of <span className="text-[#33ccff]">Direct-to-Customer (D2C)</span> Solution for
                     Brands
                 </h1>
-                <p className="text-center mb-8">
+                <p className="text-xs sm:text-sm md:text-base text-center mb-4 md:mb-8">
                     Our mission is to develop a comprehensive ecosystem and help businesses grow efficiently. We invest in
                     technology and build the strong team in the market with outstanding omni-commerce expertise and passion for
                     serving clients. We connect expertise to create one-stop solutions and data-driven products with continuous
                     innovations to empower businesses to unlock digital market growth potential.
                 </p>
             </div>
-            <div className="md:flex md:flex-wrap justify-center grid grid-cols-3 gap-6 relative">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap justify-center gap-2 md:gap-6 relative">
                 {solutions.map((solution, index) => (
                     <SolutionCard
                         key={index}

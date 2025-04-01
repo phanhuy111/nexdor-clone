@@ -38,10 +38,10 @@ const MetricCard = ({ value, label, isVisible }: { value: number; label: string;
 
     return (
         <div className="bg-sky-300 p-6 flex flex-col items-center justify-center border-r border-white">
-            <div className="text-5xl font-bold text-white">
-                {displayValue}<span className="text-4xl">+</span>
+            <div className="font-bold text-white text-xl md:text-5xl">
+                {displayValue}<span className="text-4xl md:text-4xl">+</span>
             </div>
-            <div className="text-xl text-white font-semibold text-center">{label}</div>
+            <div className="text-white font-semibold text-center text-sm md:text-xl">{label}</div>
         </div>
     );
 };
@@ -51,10 +51,10 @@ const CategoryCard = ({ value, label, isVisible }: { value: number; label: strin
 
     return (
         <div className="bg-sky-300 rounded-3xl p-4 flex flex-col items-center">
-            <div className="text-3xl font-bold text-sky-800">
-                {displayValue}<span className="text-2xl">+</span>
+            <div className="font-bold text-sky-800 text-lg md:text-3xl">
+                {displayValue}<span className="text-2xl md:text-2xl">+</span>
             </div>
-            <div className="text-base text-sky-950 font-semibold text-center">{label}</div>
+            <div className="text-sky-950 font-semibold text-center text-sm md:text-base">{label}</div>
         </div>
     );
 };
@@ -66,12 +66,12 @@ const BulletPoint = ({ value, label, description, isVisible }: { value: number; 
         <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center border-4 border-sky-200"></div>
             <div className="flex items-baseline">
-                <span className="text-3xl font-bold text-sky-800">
-                    {displayValue}<span className="text-2xl">+</span>
+                <span className="font-bold text-sky-800 text-lg md:text-3xl">
+                    {displayValue}<span className="text-2xl md:text-2xl">+</span>
                 </span>
-                <span className="text-2xl text-sky-500 ml-2">{label}</span>
+                <span className="text-sky-500 ml-2 text-sm md:text-2xl">{label}</span>
             </div>
-            {description && <span className="text-2xl text-sky-500 ml-2">{description}</span>}
+            {description && <span className="text-sky-500 ml-2 text-sm md:text-2xl">{description}</span>}
         </div>
     );
 };

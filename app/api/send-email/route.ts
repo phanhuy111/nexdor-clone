@@ -1,11 +1,22 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
-
-const resend = new Resend("re_KSuLNYhN_LBHVyRRJLeaoaGdvq31X6ykd");
+import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
     const { name, email, phone, businessArea, message, type } = await req.json();
+
     try {
+        // Create a transporter using SMTP
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 587, // Port cho TLS
+            secure: false, // False cho port 587 (dùng TLS), true cho port 465 (dùng SSL)
+            auth: {
+                user: 'phanhuypy.1999@gmail.com',
+                pass: 'phanhuypy1999', // App Password
+            },
+        });
+
+        // HTML content for the email
         const htmlContent = `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
                 <h1 style="color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px;">New Contact Form Submission</h1>
@@ -14,19 +25,25 @@ export async function POST(req: Request) {
                 <p><strong>Phone:</strong> ${phone}</p>
                 <p><strong>Business Area:</strong> ${businessArea}</p>
                 <p><strong>Message:</strong> ${message}</p>
-                <p><strong>Type:</strong> ${type}</p>
+                <p><strong>Type:</strong> ${type || 'Not specified'}</p>
             </div>
         `;
 
-        // Send the email using Resend
-        const data = await resend.emails.send({
-            from: email, // Use your verified domain or Resend's default sender
-            to: 'phanhuypy.1999@gmail.com',
-            subject: `New Contact Form Submission (${type === 'creator' ? 'Creator' : 'Brand'})`,
+        // Send the email
+        const mailOptions = {
+            from: `"Contact Form" <${process.env.SMTP_USER || 'your-email@gmail.com'}>`,
+            to: process.env.RECIPIENT_EMAIL || 'phanhuypy.1999@gmail.com',
+            replyTo: email,
+            subject: `New Contact Form Submission ${type ? `(${type === 'creator' ? 'Creator' : 'Brand'})` : ''}`,
             html: htmlContent,
-        });
+        };
 
-        return NextResponse.json({ message: 'Email sent successfully', data }, { status: 200 });
+        const info = await transporter.sendMail(mailOptions);
+
+        return NextResponse.json({
+            message: 'Email sent successfully',
+            data: { messageId: info.messageId }
+        }, { status: 200 });
     } catch (error) {
         console.error('Error sending email:', error);
         return NextResponse.json({

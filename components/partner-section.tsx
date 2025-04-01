@@ -30,7 +30,7 @@ const partnerCategories = [
             "/partner/Platform/platform-6.png",
             "/partner/Platform/platform-7.png",
             "/partner/Platform/platform-8.png",
-            "/partner/Platform/platform-9.png",
+            // "/partner/Platform/platform-9.png",
             "/partner/Platform/platform-10.png"
         ],
     },

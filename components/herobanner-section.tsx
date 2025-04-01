@@ -12,11 +12,11 @@ export default function HeroBannerSection() {
             initial="hidden"
             animate="visible"
             variants={fadeIn}
-            className="relative h-[25vh] md:h-screen w-full overflow-hidden"
+            className="relative h-[25vh] md:h-[90vh] w-full overflow-hidden"
         >
             <div className="absolute inset-0 w-full h-full overflow-hidden">
                 <Image
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     src="/home/banner-homepage.png"
                     alt="banner"
                     fill

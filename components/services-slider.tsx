@@ -49,11 +49,11 @@ export default function ServicesSlider() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {services.map((service) => (
-                        <div key={service.id} className="flex flex-row items-center bg-white rounded-lg shadow-lg p-5 transition-shadow duration-300 hover:shadow-xl">
-                            <div className="bg-gray-100 rounded-full p-6 mb-4 flex items-center justify-center">
-                                <Image src={service.icon} alt={service.title} width={60} height={60} className="object-contain" />
+                        <div key={service.id} className="flex flex-row gap-1 items-center bg-white rounded-lg shadow-lg p-5 transition-shadow duration-300 hover:shadow-xl">
+                            <div className="flex justify-start w-[20%]">
+                                <Image src={service.icon} alt={service.title} width={60} height={60} />
                             </div>
-                            <div>
+                            <div className="w-full">
                                 <h3 className="text-xl font-bold mb-2 text-center">{service.title}</h3>
                                 <p className="text-gray-600 text-center text-sm">{service.description}</p>
                             </div>

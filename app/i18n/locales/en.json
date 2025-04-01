@@ -1,6 +1,6 @@
 {
     "header": {
-        "about": "Our Solutions",
+        "about": "Our Solution",
         "services": "Services",
         "blog": "News",
         "contact": "Contact",
@@ -10,23 +10,23 @@
     },
     "home": {
         "about": {
-            "title": "Nexdor Solutions",
+            "title": "Nexdor Solution",
             "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
             "cta": "Learn more",
-            "imageAlt": "About Nexdor Solutions"
+            "imageAlt": "About Nexdor Solution"
         },
         "aboutUs": "About Us",
         "nexdor": {
-            "title": "Nexdor Solutions",
+            "title": "Nexdor Solution",
             "description": "Nexdor is a trusted bridge between traditional retailers and brands, distributors, and wholesalers. We are committed to providing comprehensive distribution solutions, driving the robust growth of traditional businesses within the modern retail ecosystem.",
             "cta": "Learn more",
-            "imageAlt": "About Nexdor Solutions"
+            "imageAlt": "About Nexdor Solution"
         },
         "customerReviews": "Customer Reviews",
         "ourClients": "Our Partners",
         "contactForm": {
             "title": "Leave Your Contact Information",
-            "description": "By providing your full contact details, Nexdor Solutions staff will reach out to you as soon as possible to answer questions and offer consultation.",
+            "description": "By providing your full contact details, Nexdor Solution staff will reach out to you as soon as possible to answer questions and offer consultation.",
             "namePlaceholder": "Full Name",
             "phonePlaceholder": "Phone Number",
             "emailPlaceholder": "Email Address",

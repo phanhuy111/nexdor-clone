@@ -14,32 +14,15 @@ const fadeIn = {
 // Reusable component for animated number display
 const AnimatedNumber = ({ value, isVisible }: { value: number; isVisible: boolean }) => {
     const [displayValue, setDisplayValue] = useState(0);
-
-    useEffect(() => {
-        if (isVisible) {
-            let start = 0;
-            const end = value;
-            const duration = 2; // Duration in seconds
-            const stepTime = Math.abs(Math.floor(duration * 1000 / end)) / 10;
-            const timer = setInterval(() => {
-                start += 1;
-                setDisplayValue(start);
-                if (start === end || start > end) clearInterval(timer);
-            }, stepTime);
-            return () => clearInterval(timer);
-        }
-    }, [isVisible, value]);
-
     return displayValue;
 };
 
-const MetricCard = ({ value, label, isVisible }: { value: number; label: string; isVisible: boolean }) => {
-    const displayValue = AnimatedNumber({ value, isVisible });
+const MetricCard = ({ value, label, isVisible }: { value: number | string; label: string; isVisible: boolean }) => {
 
     return (
         <div className="bg-sky-300 p-6 flex flex-col items-center justify-center border-r border-white">
             <div className="font-bold text-white text-xl md:text-5xl">
-                {displayValue}<span className="text-4xl md:text-4xl">+</span>
+                {value}<span className="text-4xl md:text-4xl">+</span>
             </div>
             <div className="text-white font-semibold text-center text-sm md:text-xl">{label}</div>
         </div>
@@ -47,12 +30,11 @@ const MetricCard = ({ value, label, isVisible }: { value: number; label: string;
 };
 
 const CategoryCard = ({ value, label, isVisible }: { value: number; label: string; isVisible: boolean }) => {
-    const displayValue = AnimatedNumber({ value, isVisible });
 
     return (
         <div className="bg-sky-300 rounded-3xl p-4 flex flex-col items-center">
             <div className="font-bold text-sky-800 text-lg md:text-3xl">
-                {displayValue}<span className="text-2xl md:text-2xl">+</span>
+                {value}<span className="text-2xl md:text-2xl">+</span>
             </div>
             <div className="text-sky-950 font-semibold text-center text-sm md:text-base">{label}</div>
         </div>
@@ -60,18 +42,16 @@ const CategoryCard = ({ value, label, isVisible }: { value: number; label: strin
 };
 
 const BulletPoint = ({ value, label, description, isVisible }: { value: number; label: string; description?: string; isVisible: boolean }) => {
-    const displayValue = AnimatedNumber({ value, isVisible });
-
     return (
         <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center border-4 border-sky-200"></div>
-            <div className="flex items-baseline">
+            <div className="flex items-center">
                 <span className="font-bold text-sky-800 text-lg md:text-3xl">
-                    {displayValue}<span className="text-2xl md:text-2xl">+</span>
+                    {value}<span className="text-2xl md:text-2xl">+</span>
                 </span>
                 <span className="text-sky-500 ml-2 text-sm md:text-2xl">{label}</span>
+                {description && <span className="text-sky-500 ml-2 text-sm md:text-2xl">{description}</span>}
             </div>
-            {description && <span className="text-sky-500 ml-2 text-sm md:text-2xl">{description}</span>}
         </div>
     );
 };
@@ -108,7 +88,7 @@ export default function FootprintSection() {
                     className="grid grid-cols-2 rounded-full overflow-hidden mb-6"
                 >
                     <MetricCard value={100} label="F&B Project" isVisible={inView} />
-                    <MetricCard value={10} label="Customer data" isVisible={inView} />
+                    <MetricCard value={"10M"} label="Customer data" isVisible={inView} />
                 </motion.div>
 
                 {/* Middle section - categories */}
@@ -134,10 +114,10 @@ export default function FootprintSection() {
                     transition={{ duration: 1.8, delay: 0.4 }}
                     className="space-y-6"
                 >
-                    <BulletPoint value={200} label="ProjectComunication" isVisible={inView} />
+                    <BulletPoint value={200} label="Project Comunication" isVisible={inView} />
                     <BulletPoint value={100000} label="Influencers/KOLs-KOCs" isVisible={inView} />
-                    <BulletPoint value={60} label="Clients" description="Distribution network across" isVisible={inView} />
-                    <BulletPoint value={53} label="Provinces nationwide" isVisible={inView} />
+                    <BulletPoint value={60} label="Clients" isVisible={inView} />
+                    <BulletPoint value={53} label="Distribution network across Provinces nationwide" isVisible={inView} />
                 </motion.div>
             </div>
         </motion.section>

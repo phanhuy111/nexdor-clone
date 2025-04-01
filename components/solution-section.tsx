@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 const solutions = [
     { title: "O2O Chain Solution", description: "" },
@@ -18,25 +18,41 @@ const solutions = [
     { title: "Loyalty Solution", description: "" },
 ]
 
-const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solution: any; index: number; hoveredIndex: number | null; setHoveredIndex: (index: number | null) => void }) => {
-    const isActive = hoveredIndex === index && solution.title === "Omni Commerce Solution";
+const SolutionCard = ({
+    solution,
+    index,
+    hoveredIndex,
+    setHoveredIndex,
+    isMobile,
+    setSelectedSolution
+}: {
+    solution: any;
+    index: number;
+    hoveredIndex: number | null;
+    setHoveredIndex: (index: number | null) => void;
+    isMobile: boolean;
+    setSelectedSolution: (solution: any) => void;
+}) => {
+    const isOmniCommerce = solution.title === "Omni Commerce Solution";
+    const isActive = hoveredIndex === index && isOmniCommerce;
 
-    // Use a state to store window dimensions
-    const [windowDimensions, setWindowDimensions] = useState<{ width: number; height: number } | null>(null);
+    // Use standard dimensions for non-interactive cards
+    const width = isActive && !isMobile ? "400px" : "150px";
+    const height = isActive && !isMobile ? "400px" : "150px";
 
-    useEffect(() => {
-        // Only run this effect in the browser
-        const handleResize = () => {
-            setWindowDimensions({ width: window.innerWidth, height: window.innerHeight });
-        };
+    // Responsive sizing for mobile
+    const mobileWidth = isActive && !isMobile ? "200px" : "100px";
+    const mobileHeight = isActive && !isMobile ? "200px" : "100px";
 
-        handleResize(); // Set initial dimensions
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    const width = isActive ? (windowDimensions ? (windowDimensions.width < 768 ? "200px" : "300px") : "300px") : (windowDimensions ? (windowDimensions.width < 768 ? "100px" : "150px") : "150px");
-    const height = isActive ? (windowDimensions ? (windowDimensions.width < 768 ? "200px" : "300px") : "300px") : (windowDimensions ? (windowDimensions.width < 768 ? "100px" : "150px") : "150px");
+    const handleInteraction = () => {
+        if (isOmniCommerce) {
+            if (isMobile) {
+                setSelectedSolution(solution);
+            } else {
+                setHoveredIndex(index);
+            }
+        }
+    }
 
     return (
         <div className="relative flex items-center justify-center">
@@ -45,9 +61,9 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 animate={{
                     opacity: 1,
                     scale: 1,
-                    width: width,
-                    height: height,
-                    zIndex: isActive ? 10 : 1,
+                    width: isMobile ? mobileWidth : width,
+                    height: isMobile ? mobileHeight : height,
+                    zIndex: isActive && !isMobile ? 10 : 1,
                 }}
                 transition={{
                     duration: 0.2,
@@ -57,16 +73,17 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 }}
                 className={`
                     flex items-center justify-center bg-[#f0f4f8] border-2 border-[#33ccff] 
-                    rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer
+                    rounded-full shadow-lg ${isOmniCommerce ? 'hover:shadow-xl cursor-pointer' : ''} transition-all
                     w-[100px] h-[100px]
                     sm:w-[120px] sm:h-[120px]
                     md:w-[150px] md:h-[150px]
                     relative overflow-hidden
                 `}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                onClick={handleInteraction}
+                onMouseEnter={() => isOmniCommerce && !isMobile && setHoveredIndex(index)}
+                onMouseLeave={() => isOmniCommerce && !isMobile && setHoveredIndex(null)}
             >
-                {isActive ? (
+                {isActive && !isMobile ? (
                     <div className="flex items-center">
                         <div className="text-center">
                             <p className="text-xs md:text-sm text-gray-600 max-w-[180px] md:max-w-[220px]">{solution.description}</p>
@@ -80,8 +97,60 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
     );
 };
 
+const MobilePopup = ({ solution, onClose }: { solution: any; onClose: () => void }) => {
+    if (!solution) return null;
+
+    return (
+        <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+                onClick={onClose}
+            >
+                <motion.div
+                    initial={{ scale: 0.9, y: 20 }}
+                    animate={{ scale: 1, y: 0 }}
+                    exit={{ scale: 0.9, y: 20 }}
+                    className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full relative"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <button
+                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                        onClick={onClose}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <h2 className="text-xl font-bold text-center mb-4">{solution.title}</h2>
+                    <p className="text-gray-700">{solution.description}</p>
+                </motion.div>
+            </motion.div>
+        </AnimatePresence>
+    );
+};
+
 export default function NexdorSolutions() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+    const [selectedSolution, setSelectedSolution] = useState<any>(null);
+
+    useEffect(() => {
+        const checkIfMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        // Initial check
+        checkIfMobile();
+
+        // Event listener for window resize
+        window.addEventListener('resize', checkIfMobile);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', checkIfMobile);
+    }, []);
 
     return (
         <div className="bg-white text-black px-4 md:px-8">
@@ -105,10 +174,19 @@ export default function NexdorSolutions() {
                         index={index}
                         hoveredIndex={hoveredIndex}
                         setHoveredIndex={setHoveredIndex}
+                        isMobile={isMobile}
+                        setSelectedSolution={setSelectedSolution}
                     />
                 ))}
             </div>
+
+            {/* Mobile popup - only appears for Omni Commerce Solution */}
+            {selectedSolution && selectedSolution.title === "Omni Commerce Solution" && (
+                <MobilePopup
+                    solution={selectedSolution}
+                    onClose={() => setSelectedSolution(null)}
+                />
+            )}
         </div>
     );
 }
-

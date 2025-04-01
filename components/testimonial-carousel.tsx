@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
     name: "Nguyễn A",
     company: "Đậu Má Mix",
     content:
-      "Trước đây, Đậu Má Mix có gian hàng trên các nền tảng giao đồ ăn nhưng chưa tối ưu, hiệu suất chưa cao. Hợp tác với Nexdor Solutions đã giúp các cửa hàng cải thiện từ hình ảnh, nội dung đến chiến lược giá, giúp gian hàng vận hành trơn tru hơn. Đơn hàng tăng trưởng rõ rệt sau khi hợp tác, xếp hạng gian hàng cũng cao hơn trên ShopeeFood, GrabFood. Nhờ đội ngũ Nexdor, việc kinh doanh của chúng tôi tiết kiệm được rất nhiều thời gian mà vẫn đạt hiệu quả tốt nhất.",
+      "Trước đây, Đậu Má Mix có gian hàng trên các nền tảng giao đồ ăn nhưng chưa tối ưu, hiệu suất chưa cao. Hợp tác với Nexdor Solution đã giúp các cửa hàng cải thiện từ hình ảnh, nội dung đến chiến lược giá, giúp gian hàng vận hành trơn tru hơn. Đơn hàng tăng trưởng rõ rệt sau khi hợp tác, xếp hạng gian hàng cũng cao hơn trên ShopeeFood, GrabFood. Nhờ đội ngũ Nexdor, việc kinh doanh của chúng tôi tiết kiệm được rất nhiều thời gian mà vẫn đạt hiệu quả tốt nhất.",
     image: "/brands/dau-ma-mix.png",
   },
   {

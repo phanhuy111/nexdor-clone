@@ -43,12 +43,12 @@ export default function AboutUs() {
       {/* Navigation */}
       <Header />
 
-      <main className="pb-10">
+      <main className="pb-10 flex flex-col gap-5">
         <motion.section
           initial="hidden"
           animate="visible"
           variants={fadeIn}
-          className="relative h-[25vh] md:h-screen w-full overflow-hidden mb-12"
+          className="relative h-[25vh] md:h-screen w-full overflow-hidden"
         >
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <Image
@@ -183,7 +183,7 @@ export default function AboutUs() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideUp}
-          className="container mx-auto px-4 mb-16"
+          className="container mx-auto px-4"
         >
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <motion.div
@@ -234,7 +234,7 @@ export default function AboutUs() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideUp}
-          className="container mx-auto px-4 mb-16"
+          className="container mx-auto px-4"
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div
@@ -273,7 +273,7 @@ export default function AboutUs() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideUp}
-          className="container mx-auto px-4 mb-16"
+          className="container mx-auto px-4"
         >
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <motion.div

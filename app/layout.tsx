@@ -7,7 +7,7 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nexdor Solutions",
+  title: "Nexdor Solution",
   description: "Growth-driven value for your business",
 }
 

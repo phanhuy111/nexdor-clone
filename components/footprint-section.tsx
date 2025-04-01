@@ -41,16 +41,19 @@ const CategoryCard = ({ value, label, isVisible }: { value: number; label: strin
     );
 };
 
-const BulletPoint = ({ value, label, description, isVisible }: { value: number; label: string; description?: string; isVisible: boolean }) => {
+const BulletPoint = ({ value, label, description, heading }: { value: number; label: string; description?: string; heading?: string }) => {
     return (
         <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center border-4 border-sky-200"></div>
-            <div className="flex items-center">
-                <span className="font-bold text-sky-800 text-lg md:text-3xl">
-                    {value}<span className="text-2xl md:text-2xl">+</span>
-                </span>
-                <span className="text-sky-500 ml-2 text-sm md:text-2xl">{label}</span>
-                {description && <span className="text-sky-500 ml-2 text-sm md:text-2xl">{description}</span>}
+            <div className="flex flex-col">
+                {heading && <span className="text-sky-500 text-sm md:text-2xl">{heading}</span>}
+                <div className="flex items-center">
+                    <span className="font-bold text-sky-800 text-lg md:text-3xl">
+                        {value}<span className="text-2xl md:text-2xl">+</span>
+                    </span>
+                    <span className="text-sky-500 ml-2 text-sm md:text-2xl">{label}</span>
+                    {description && <span className="text-sky-500 ml-2 text-sm md:text-2xl">{description}</span>}
+                </div>
             </div>
         </div>
     );
@@ -117,7 +120,7 @@ export default function FootprintSection() {
                     <BulletPoint value={200} label="Project Comunication" isVisible={inView} />
                     <BulletPoint value={100000} label="Influencers/KOLs-KOCs" isVisible={inView} />
                     <BulletPoint value={60} label="Clients" isVisible={inView} />
-                    <BulletPoint value={53} label="Distribution network across Provinces nationwide" isVisible={inView} />
+                    <BulletPoint value={53} label="Provinces nationwide" heading={"Distribution network across"} isVisible={inView} />
                 </motion.div>
             </div>
         </motion.section>

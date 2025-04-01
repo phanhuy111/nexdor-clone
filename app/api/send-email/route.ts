@@ -10,8 +10,8 @@ export async function POST(req: Request) {
             port: 587,
             secure: false,
             auth: {
-                user: 'phanhuypy.1999@gmail.com',
-                pass: 'oqzzdnuuyxujknek',
+                user: 'marketing@nexdor.tech',
+                pass: 'ouwrcskwqvyeyrto',
             },
         });
 
@@ -34,8 +34,8 @@ export async function POST(req: Request) {
 
         // Send the email
         const mailOptions = {
-            from: `"Contact Form" <phanhuypy.1999@gmail.com>`,
-            to: 'phanhuypy.1999@gmail.com',
+            from: `"Contact Form" <marketing@nexdor.tech>`,
+            to: 'marketing@nexdor.tech',
             replyTo: email,
             subject: `New Contact Form Submission`,
             html: htmlContent,

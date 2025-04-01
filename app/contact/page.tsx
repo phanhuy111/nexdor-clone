@@ -167,7 +167,7 @@ export default function ContactPage() {
                   variants={slideUp}
                   className="info-text text-gray-600 mb-6"
                 >
-                  {t('contact.info.companyName')}
+                  NEXDOR SOLUTION LTD.
                 </motion.p>
 
                 <motion.div
@@ -178,7 +178,7 @@ export default function ContactPage() {
                     {t('contact.info.headquarters')}
                   </h4>
                   <p className="info-detail text-gray-600">
-                    {t('contact.info.address')}
+                    68 CIRCULAR ROAD #02-01 SINGAPORE
                   </p>
                 </motion.div>
 
@@ -187,17 +187,7 @@ export default function ContactPage() {
                   className="info-block mb-4"
                 >
                   <h4 className="info-title text-lg font-medium text-gray-800 mb-2">
-                    {t('contact.info.phone')}
-                  </h4>
-                  <p className="info-detail text-gray-600">{t('contact.info.phoneNumber')}</p>
-                </motion.div>
-
-                <motion.div
-                  variants={slideUp}
-                  className="info-block mb-4"
-                >
-                  <h4 className="info-title text-lg font-medium text-gray-800 mb-2">
-                    {t('contact.info.businessHours')}
+                    Business Hours
                   </h4>
                   <p className="info-detail text-gray-600">9:00 am - 6:00 pm (From Mon - Fri)</p>
                 </motion.div>

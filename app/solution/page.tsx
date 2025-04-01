@@ -152,7 +152,7 @@ export default function AboutUs() {
               className="md:w-1/2"
             >
               <Image
-                src="/us/giá trị cốt lõi.png"
+                src="/us/tầm nhìn chúng tôi.png"
                 alt={t('aboutUs.teamImageAlt')}
                 width={400}
                 height={300}
@@ -192,7 +192,7 @@ export default function AboutUs() {
               className="md:w-1/2"
             >
               <Image
-                src="/us/tầm nhìn chúng tôi.png"
+                src="/us/vấn đề.png"
                 alt={t('aboutUs.visionImageAlt')}
                 width={400}
                 height={300}
@@ -243,7 +243,7 @@ export default function AboutUs() {
               className="md:w-1/2"
             >
               <Image
-                src="/us/sứ mệnh.png"
+                src="/us/giá trị cốt lõi.png"
                 alt={t('aboutUs.missionImageAlt')}
                 width={400}
                 height={300}
@@ -282,7 +282,7 @@ export default function AboutUs() {
               className="md:w-1/2"
             >
               <Image
-                src="/us/tầm nhìn chúng tôi.png"
+                src="/us/sứ mệnh.png"
                 alt={t('aboutUs.visionImageAlt')}
                 width={400}
                 height={300}

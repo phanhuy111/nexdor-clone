@@ -63,9 +63,19 @@
             "text": "We deeply appreciate and value the collaboration with our esteemed clients over time.",
             "imageAlt": "Business Collaboration Illustration"
         },
+        "info": {
+            "title": "Contact Information",
+            "companyName": "NEXDOR VIETNAM CO., LTD",
+            "headquarters": "Headquarters:",
+            "address": "24 Huynh Khuong Ninh, Da Kao Ward, District 1, Ho Chi Minh City",
+            "phone": "Phone:",
+            "phoneNumber": "(+84) 028 7777 6666",
+            "email": "Email Address:",
+            "emailAddress": "partner@nexdor.tech"
+        },
         "form": {
             "title": "Leave Your Contact Information",
-            "description": "By providing your full contact details, Nexdor Solutions staff will reach out to you as soon as possible to answer questions and offer consultation.",
+            "description": "By providing your full contact details, Nexdor Solution staff will reach out to you as soon as possible to answer questions and offer consultation.",
             "namePlaceholder": "Full Name",
             "phonePlaceholder": "Phone Number",
             "emailPlaceholder": "Email Address",
@@ -78,8 +88,8 @@
     },
     "aboutUs": {
         "title": "Our Story",
-        "companyName": "Nexdor Solutions",
-        "description": "Nexdor Solutions takes pride in our experienced team and deep market understanding, delivering creative, personalized strategies to help clients optimize business performance and build strong brands. At Nexdor Solutions, we are not just partners but trusted companions, committed to helping you achieve every goal and create lasting value. Let us help you tell your brand story in an impressive and successful way!",
+        "companyName": "Nexdor Solution",
+        "description": "Nexdor Solution takes pride in our experienced team and deep market understanding, delivering creative, personalized strategies to help clients optimize business performance and build strong brands. At Nexdor Solution, we are not just partners but trusted companions, committed to helping you achieve every goal and create lasting value. Let us help you tell your brand story in an impressive and successful way!",
         "teamImageAlt": "Nexdor Team",
         "coreValues": {
             "title": "Market research & Localization",

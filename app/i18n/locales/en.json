@@ -63,17 +63,6 @@
             "text": "We deeply appreciate and value the collaboration with our esteemed clients over time.",
             "imageAlt": "Business Collaboration Illustration"
         },
-        "info": {
-            "title": "Contact Information",
-            "companyName": "NEXDOR VIETNAM CO., LTD",
-            "headquarters": "Headquarters:",
-            "businessHours": "Business Hours",
-            "address": "24 Huynh Khuong Ninh, Da Kao Ward, District 1, Ho Chi Minh City",
-            "phone": "Phone:",
-            "phoneNumber": "(+84) 028 7777 6666",
-            "email": "Email Address:",
-            "emailAddress": "ha@nexdor.tech"
-        },
         "form": {
             "title": "Leave Your Contact Information",
             "description": "By providing your full contact details, Nexdor Solutions staff will reach out to you as soon as possible to answer questions and offer consultation.",
@@ -102,15 +91,15 @@
         },
         "mission": {
             "title": "Branding & Marketing Solution",
-            "description": "Xanh Marketing will be your trusted partner throughout every stage of your marketing journey, from strategic planning to flawless campaign execution, ensuring your brand stands out and resonates deeply with Vietnamese consumers."
+            "description": "Nexdor Solution will be your trusted partner throughout every stage of your marketing journey, from strategic planning to flawless campaign execution, ensuring your brand stands out and resonates deeply with Vietnamese consumers."
         },
         "distribution": {
             "title": "Distribution",
-            "description": "With an expansive distribution network and strategic partnerships across 53 provinces, Vigo ensures your products reach every corner of the Vietnamese market from bustling cities to the most remote rural areas."
+            "description": "With an expansive distribution network and strategic partnerships across 53 provinces, We ensures your products reach every corner of the Vietnamese market from bustling cities to the most remote rural areas."
         }
     },
     "footer": {
-        "companyName": "NEXDOR VIETNAM CO., LTD",
+        "companyName": "NEXDOR SOLUTION LTD.",
         "services": {
             "title": "Services",
             "items": {

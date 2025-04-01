@@ -38,7 +38,7 @@ const partnerCategories = [
         title: "Loyalty",
         images: [
             "/partner/Loyalty/loyalty-1.png",
-            "/partner/Loyalty/loyalty-2.png",
+            // "/partner/Loyalty/loyalty-2.png",
             "/partner/Loyalty/loyalty-3.png",
             "/partner/Loyalty/loyalty-4.png",
         ],

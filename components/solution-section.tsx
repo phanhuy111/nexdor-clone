@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
 const solutions = [
@@ -21,6 +21,23 @@ const solutions = [
 const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solution: any; index: number; hoveredIndex: number | null; setHoveredIndex: (index: number | null) => void }) => {
     const isActive = hoveredIndex === index && solution.title === "Omni Commerce Solution";
 
+    // Use a state to store window dimensions
+    const [windowDimensions, setWindowDimensions] = useState<{ width: number; height: number } | null>(null);
+
+    useEffect(() => {
+        // Only run this effect in the browser
+        const handleResize = () => {
+            setWindowDimensions({ width: window.innerWidth, height: window.innerHeight });
+        };
+
+        handleResize(); // Set initial dimensions
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const width = isActive ? (windowDimensions ? (windowDimensions.width < 768 ? "200px" : "300px") : "300px") : (windowDimensions ? (windowDimensions.width < 768 ? "100px" : "150px") : "150px");
+    const height = isActive ? (windowDimensions ? (windowDimensions.width < 768 ? "200px" : "300px") : "300px") : (windowDimensions ? (windowDimensions.width < 768 ? "100px" : "150px") : "150px");
+
     return (
         <div className="relative flex items-center justify-center">
             <motion.div
@@ -28,8 +45,8 @@ const SolutionCard = ({ solution, index, hoveredIndex, setHoveredIndex }: { solu
                 animate={{
                     opacity: 1,
                     scale: 1,
-                    width: isActive ? (window.innerWidth < 768 ? "200px" : "300px") : (window.innerWidth < 768 ? "100px" : "150px"),
-                    height: isActive ? (window.innerWidth < 768 ? "200px" : "300px") : (window.innerWidth < 768 ? "100px" : "150px"),
+                    width: width,
+                    height: height,
                     zIndex: isActive ? 10 : 1,
                 }}
                 transition={{

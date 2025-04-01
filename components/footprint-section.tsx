@@ -100,7 +100,7 @@ export default function FootprintSection() {
                     animate={controls}
                     variants={fadeIn}
                     transition={{ duration: 1.5, delay: 0.2 }}
-                    className="grid grid-cols-3 gap-4 mb-8"
+                    className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"
                 >
                     <CategoryCard value={200} label="Channel Commerce" isVisible={inView} />
                     <CategoryCard value={90000} label="Partners" isVisible={inView} />
